@@ -16,3 +16,6 @@ and solving that problem. This ambition naturally attracted me to the field of
 Computer Science and coding more recently in my life. I enjoy continuously learning 
 and solving the problems that come about from coding, as well as making those 
 solutions readable and supportable. 
+
+
+

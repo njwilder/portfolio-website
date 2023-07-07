@@ -1,11 +1,24 @@
 
-function say_hello(name="Person") {
-    // console.log("Hello " + name + "!");
-    return "Hello " + name + "!";
+function calculateCurrentAge() {
+    const date = new Date();
+
+    const day   = date.getDay();
+    const month = date.getMonth();
+    const year  = date.getFullYear();
+
+    let age = year - 1998;
+
+    // Birth date: 08/09/1998
+    if (month-8 == 0) {
+        if (day-9 >= 0) {
+            return age;
+        }
+    } else if (month-8 > 0) {
+        return age;
+    }
+    return age - 1;
 }
 
-say_hello();
-say_hello("Noah");
+// Update age.
+document.getElementById("age").innerHTML = calculateCurrentAge();
 
-// window.alert("HELLO. THIS IS NOT A DRILL. I REPEAT, THIS IS NOT A DRILL!");
-// document.getElementById("header").innerHTML = say_hello("Jake");
