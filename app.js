@@ -1,4 +1,5 @@
 
+// May not actually use this? Shouldn't shoehorn it in if it doesn't make sense
 function calculateCurrentAge() {
     const date = new Date();
 
@@ -18,6 +19,8 @@ function calculateCurrentAge() {
     }
     return age - 1;
 }
+
+
 
 // Update age.
 document.getElementById("age").innerHTML = calculateCurrentAge();

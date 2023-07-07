@@ -1,21 +1,19 @@
-About: 
-My name is Noah Wilder and I enjoy working on and solving a wide variety of problems. 
-Whether I am working on more theoretical Computer Science problems that come about 
-from code and system specifications, or I am working towards achieving personal projects
 
 
-My name is Noah Wilder and I enjoy solving complex problems and expanding my 
-knowledge base around many different fields.
+~~~~Categories~~~~
+-About
+ -Subpage which goes more in-depth?
+-Coding experience
+-Projects + Who they are for and why they were created
+-Contact Info
 
 
 
+-coding interests
+-coding qualifications
+-work history (resume)
 
-One of my greatest joys in life is learning how things work and solving problems.
-The more intimidating a problem is, the harder I will strive towards understanding 
-and solving that problem. This ambition naturally attracted me to the field of 
-Computer Science and coding more recently in my life. I enjoy continuously learning 
-and solving the problems that come about from coding, as well as making those 
-solutions readable and supportable. 
+-hobby interests
 
 
 
