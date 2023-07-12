@@ -1,10 +1,33 @@
+-Stuff I've done at IOL and school, etc.
+
+
+
+Relevant Coding Courses:
+-
 
 
 Coding Qualifications:
--Languages, stuff I've done at IOL and school, etc.
+
+
+
+Languages:
+-Assembly
+-BASH
+-C
+-C++
+-Python
+-HTML/CSS/JavaScript + NodeJS + React
+-Java
+-Scala
+-LISP (partial)
+-
 
 
 Portfolio/Work History:
 // Put resume here or something
 
 
+-Tkinter GUI development for professional and non-professional work.
+-RLM product license handling
+-Device test script development (NVMe SSDs)
+-Test development for NVMe PCIe SSDs (BASH and Python)

@@ -28,11 +28,14 @@ I only realized going into college that I could actually aspire towards creating
 things like videogames. As I explored 'software development' as a possible field 
 of study, I came to realize that this ability reached past videogames into being 
 able to code ANYTHING* you could imagine! The possibilities where endless!
-I always thought this power was reserved only for the sevant engineers of the ancient world, 
+I always thought this power was reserved only for the savant engineers of the ancient world, 
 being something unattainable to the common people. I just never made the connection that 
 software was a viable career option and at the time I didn't really understand what 
 software development even meant or how it all worked, so I went with my gut and decided 
-to start studying for a degree in CS.
+to start studying for a degree in CS. I never chose CS for any reason other than 
+to develop a better understanding of the systems I used daily.
+
+
 
 
 HOBBY ABOUT:
@@ -44,30 +47,38 @@ HOBBY ABOUT:
 I started my professional journey relatively recently (starting in college) after being lost and not knowing what I really wanted to do for most of my life, I realized that I had been working with computers my whole life and I should play towards my strengths. I was always curious about how things worked and I always wanted to discover
 
 ~~~~What are your inspirations? Where do you find inspiration?~~~~
+I found a lot of inspiration for coding to come from my first technical job at the 
+InterOperability Laboratory at the University of New Hampshire. Many of the people 
+working there convinced me that coding and working hard in general could actually be fun.
+A lot of inspiration was drawn from certain sensational characters at this job that I will never forget 
+and I owe a great deal to. These people showed me that it was okay to not know everything, 
+reach out for help, but also stay firm in your work and not to give up, even when 
+things look hopeless. 
 
 ~~~~What motivates you to do what you do?~~~~
 
 ~~~~What is your favorite part about being a software developer?~~~~
 
+
 ~~~~Favorite books which relate to your profession:~~~~
 The Soul of a New Machine: This book really speaks to me as someone who has really 
 given their entire being to get a project to work given a soul crushing workload 
-and a seemingly impossible task within a relatively short amount of time. In the end 
-my experience led me to one one of the biggest burnouts I have ever experienced in 
-my life, but it shows a different way of development and  
+and a seemingly impossible task within a relatively short amount of time (many times). 
+I find myself relating to many of the computer engineers of the 'Eclipse' system in 
+how they felt and worked on problems-------
 
 The Silmarillion: This is not a book that relates to my profession directly, but I think 
 unraveling the history and story of J.R.R. Tolkien's Middle-earth displays skills which 
 translate to software development pretty well. This being one of my favorite books shows 
-that I enjoy untangling seeming insurmountable 
+that I enjoy untangling seeming insurmountable------
 
 
 
 
 Coding Interests:
 I enjoy working on large coding projects generally. Most of the work I have accomplished 
-has been done from the ground-up, though I have experience in supporting older 
-large-scale projects also. If I agree with the mission of the place I work at---
+has been done from the ground-up (assignments, work projects, personal projects), though 
+I have experience in supporting older large-scale code bases.
 
 
 
