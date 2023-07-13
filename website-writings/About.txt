@@ -11,18 +11,50 @@ supportable and clean as possible, while also squeezing the best performance fro
 a given system possible. 
 
 
-MORE ABOUT:
+MORE DETAILED ABOUT:
 "For fortune and glory, kid. For fortune and glory..."
 
 I am continually fascinated by the use of abstraction in computing to achieve some of 
 the most impressive feats in human history.
 
-Being raised by videogame consoles from 1985-present [yes I had a very fortunate 
-childhood in this regard] as well as getting into PC gaming with Diablo II, I have 
-always been curious about how these miraculous devices could function. There was 
+I have been a video game junky since I could walk and talk. For better and for worse I 
+have practically been raised off of games from the 1980's to present day. There 
+is something I enjoy about having a fixed set of rules to work by in order to achieve 
+various tasks. It makes you think in a different way to how you would think in real life.
+You start to understand and internalize the quirks of every game's game engine to 
+best realize your goals within said game. 
+
+I have always been curious about how these miraculous devices could function. There was 
 something so captivating about taking a plastic game console cartridge, slotting 
 it into the system, and having something like Yoshi's Island appear on your television 
-screen ready to play! 
+screen ready to play! This didn't work if you tried stuffing something like a 
+peanut-butter and jelly sandwich into the cartridge slot, so what gives? What gave 
+these cartridges their power to control the beast that lay inside of the console's 
+outer shell?
+
+Fortunately/unfortunately the internet was still not very prominent in my household. 
+<maybe add a subtext thing about this here?>
+****I vividly remember a time where my dad and I were trying to install Diablo II on 
+PC from disk, and it required a constant internet connection to grab the necessary 
+1's and 0's for the game to function. If the process was interrupted in any way, then 
+the whole thing needed to be restarted. It took 2 weeks of continuous connection for 
+the game to be installed (and we had it fail many times)... 
+****
+I didn't really understand at the time how to utilize the internet to get useful 
+information out of it, and it was flakey and strange anyways. Why not just find 
+things out for yourself or not question it and keep going with your life? 
+
+Now I wouldn't say that I wasted my early years with gaming and generally being a 
+recluse (though I would like to think a partially well-mannered one who didn't cause 
+tooooo much trouble usually). I was always a very direction-less indecisive type of 
+person growing up. I never found something that really interested me in a way that 
+would inspire me to do work. Sure I worked still and I knew that I enjoyed playing video 
+games, but I was always surrounded by the idea that video gaming was a juvenile activity 
+and you really should become something more practical. I was just going through the 
+motions in life. Nothing really caught my eye or interested me. I felt like the only 
+real resources I had to work with were my videogames, books, and movies. But this is 
+a very 'consumer' type lifestyle and I wanted to create new wonderful things! I just 
+didn't know how to in a meaningful way. 
 
 I only realized going into college that I could actually aspire towards creating 
 things like videogames. As I explored 'software development' as a possible field 
@@ -64,7 +96,7 @@ things look hopeless.
 The Soul of a New Machine: This book really speaks to me as someone who has really 
 given their entire being to get a project to work given a soul crushing workload 
 and a seemingly impossible task within a relatively short amount of time (many times). 
-I find myself relating to many of the computer engineers of the 'Eclipse' system in 
+I find myself relating to many of the computer engineers of the 'Eagle' system in 
 how they felt and worked on problems-------
 
 The Silmarillion: This is not a book that relates to my profession directly, but I think 
