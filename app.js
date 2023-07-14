@@ -20,7 +20,19 @@ function calculateCurrentAge() {
     return age - 1;
 }
 
+/**
+ * Changes card plus buttons to minus buttons and vice versa.
+ */
+function toggleCard(imgID, dropdownID) {
+    if (document.getElementById(imgID).src.includes("plus_button.png")) {
+        document.getElementById(imgID).src = "res/minus_button.png";
+        document.getElementById(dropdownID).style.display = "block";
+    } else {
+        document.getElementById(imgID).src = "res/plus_button.png";
+        document.getElementById(dropdownID).style.display = "none";
+    }
+}
 
 // Update age.
-document.getElementById("age").innerHTML = calculateCurrentAge();
+// document.getElementById("age").innerHTML = calculateCurrentAge();
 
