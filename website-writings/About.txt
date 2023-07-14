@@ -1,6 +1,6 @@
 
 About:
-My name is Noah Wilder: I love software development (other things).
+My name is Noah Wilder: I love software development (among other things).
 
 One of my greatest joys in life is learning how things work and solving problems.
 The more intimidating or difficult a problem is, the harder I will strive towards 
@@ -107,7 +107,7 @@ including me, it was).
 
 I liked to spread the idea that it was okay to not understand everything or even anything as long 
 as you were working towards understanding and bettering yourself. I can't stand the idea of not 
-trying to improve yourself and you abilities daily. This is somewhat hipocritical given my 
+trying to improve yourself and your abilities daily. This is somewhat hipocritical given my 
 meandering upbringing only being enlightened to this idea of self improvement relatively recently, 
 however I believe it to be one of the keys to being truly satisfied in life, something which I am 
 always seeking out.
@@ -121,7 +121,13 @@ in this life.
 
 
 HOBBY ABOUT:
-
+I believe it is important to reach out and grab anything that is even remotely 
+interesting to yourself with both hands. I subscribe to the "jack of all trades, 
+master of one" philosiphy where you should strive to try and learn as much about 
+everything as possible. It's probably a good idea to learn more thoroughly in 
+a field of some sort (for me being computing and electrical engineering as more of 
+a hobby), but we should not supress our urge to explore outside of our preconcieved 
+boundries. 
 
 
 

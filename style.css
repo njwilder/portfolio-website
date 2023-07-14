@@ -5,35 +5,67 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: black;
     color: white;
 }
 
-#site-background-img{
+#header-background-img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(res/clint.jpg);
     background-size: cover;
     background-position: center;
-
     background-attachment: fixed;
     background-repeat: no-repeat;
-
 }
 
-#header{
-    
+/* Top Links */
+#links nav ul li{
+    display: inline;
+    margin: 10px;
+}
+#links a{
+    color: aqua;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+#links a:hover{
+    color: orange;
 }
 
-#logo{
+#header-text{
+    color: greenyellow;
+    padding-block: 20px 150px;
+}
+
+#about-page{
+    background-color: green;
+    border-radius: 20px;
+}
+#about-page p{
+    color:orange;
+    padding: 0px 5px 10px 5px;
+}
+#about-page p a{
+    text-decoration: none;
+    color: purple;
+}
+
+#education-background-img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-image: url(res/TN-Maglor_Casts_a_Silmaril_into_the_Sea.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
-#main-page{
-    background-color: green;
+#education-header{
+    background-color: brown;
     border-radius: 20px;
 }

@@ -21,7 +21,6 @@ function calculateCurrentAge() {
 }
 
 
-
 // Update age.
 document.getElementById("age").innerHTML = calculateCurrentAge();
 
