@@ -20,6 +20,8 @@ body{
     100% {opacity: 1;}
 }
 
+
+
 #header-background-img{
     width: 100%;
     height: 100%;
@@ -44,10 +46,13 @@ body{
     color: orange;
 }
 
-#header-text{
-    color: orangered;
+#page-spacer{
     padding-top: 20%;
     padding-bottom: 20%;
+}
+
+#header-text{
+    color: orangered;
     padding-left:10%;
     padding-right:50%;
     animation: fadeIn 2s;
@@ -70,7 +75,7 @@ body{
     color: purple;
 }
 
-#education-background-img{
+/* #education-background-img{
     width: 100%;
     height: 100%;
     background-image: url(res/TN-Maglor_Casts_a_Silmaril_into_the_Sea.jpg);
@@ -85,8 +90,7 @@ body{
 }
 #education-page h1{
     text-align: center;
-}
-
+} */
 
 #technical-work-background-img{
     width: 100%;
@@ -103,6 +107,14 @@ body{
 }
 #technical-work-page h1{
     text-align: center;
+}
+#technical-work-page p{
+    color: white;
+    padding: 0px 5px 10px 5px;
+}
+#technical-work-page p a{
+    text-decoration: none;
+    color: purple;
 }
 
 /* Card Class */
