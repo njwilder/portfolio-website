@@ -1,4 +1,4 @@
--Stuff I've done at IOL and school, etc.
+-Stuff I've done at IOL, school, etc.
 
 
 
@@ -19,7 +19,7 @@ Languages:
 -HTML/CSS/JavaScript + NodeJS + React
 -Java
 -Scala
--LISP (partial)
+-CLISP (partial)
 -
 
 
@@ -31,3 +31,5 @@ Portfolio/Work History:
 -RLM product license handling
 -Device test script development (NVMe SSDs)
 -Test development for NVMe PCIe SSDs (BASH and Python)
+-Intern Mangement
+-General department leadership

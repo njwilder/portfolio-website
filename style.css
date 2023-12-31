@@ -14,12 +14,18 @@ body{
     color: white;
 }
 
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 #header-background-img{
     width: 100%;
     height: 100%;
-    background-image: url(res/clint.jpg);
+    background-image: url(res/Header_img.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -39,8 +45,12 @@ body{
 }
 
 #header-text{
-    color: greenyellow;
-    padding-block: 20px 150px;
+    color: orangered;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left:10%;
+    padding-right:50%;
+    animation: fadeIn 2s;
 }
 
 #about-page{
@@ -48,10 +58,11 @@ body{
     border-radius: 20px;
 }
 #about-page h1{
+    color: blue;
     text-align: center;
 }
 #about-page p{
-    color:orange;
+    color: yellow;
     padding: 0px 5px 10px 5px;
 }
 #about-page p a{
@@ -76,12 +87,31 @@ body{
     text-align: center;
 }
 
+
+#technical-work-background-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(res/clint.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#technical-work-page{
+    background-color: purple;
+    border-radius: 20px;
+}
+#technical-work-page h1{
+    text-align: center;
+}
+
 /* Card Class */
 .card{
     margin-inline: 10px;
     height: 50px;
     background-color: purple;
     user-select: none;
+    /* transition: height 0.5s; */
 }
 .card img{
     margin: 5px;
@@ -93,6 +123,10 @@ body{
     display: inline-block;
     vertical-align: middle;
 }
-.card p{
+.card_text{
+    margin-inline: 10px;
+    height: 5px;
+    background-color: darkolivegreen;
     display: none;
+    transition: height 0.5s;
 }

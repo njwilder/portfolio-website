@@ -1,6 +1,6 @@
 
 About:
-My name is Noah Wilder: I love software development (among other things).
+My name is Noah Wilder: I love computers!
 
 One of my greatest joys in life is learning how things work and solving problems.
 The more intimidating or difficult a problem is, the harder I will strive towards 
@@ -112,12 +112,6 @@ meandering upbringing only being enlightened to this idea of self improvement re
 however I believe it to be one of the keys to being truly satisfied in life, something which I am 
 always seeking out.
 
-In the end I believe my work lost my respect and lost any right for me to continue working there 
-by how they treated me during a very difficult time in my life, however I will continue to sing the 
-praises of the people who uplifted my spirit and the work which made me realize some of my potential 
-in this life. 
-
-
 
 
 HOBBY ABOUT:
@@ -127,7 +121,8 @@ master of one" philosiphy where you should strive to try and learn as much about
 everything as possible. It's probably a good idea to learn more thoroughly in 
 a field of some sort (for me being computing and electrical engineering as more of 
 a hobby), but we should not supress our urge to explore outside of our preconcieved 
-boundries. 
+boundries. I am continually fascinated by just how much there is to learn about 
+and experience in this world.
 
 
 
@@ -153,7 +148,9 @@ The Soul of a New Machine: This book really speaks to me as someone who has real
 given their entire being to get a project to work given a soul crushing workload 
 and a seemingly impossible task within a relatively short amount of time (many times). 
 I find myself relating to many of the computer engineers of the 'Eagle' system in 
-how they felt and worked on problems-------
+how they felt and worked on problems. I felt like I was really unique in how I felt about these 
+machines before sitting down and reading this book. I had come to discover that there where other 
+sick and twisted individuals out there who enjoyed working way past the call of duty on a project.
 
 The Silmarillion: This is not a book that relates to my profession directly, but I think 
 unraveling the history and story of J.R.R. Tolkien's Middle-earth displays skills which 
@@ -166,7 +163,9 @@ that I enjoy untangling seeming insurmountable------
 Coding Interests:
 I enjoy working on large coding projects generally. Most of the work I have accomplished 
 has been done from the ground-up (assignments, work projects, personal projects), though 
-I have experience in supporting older large-scale code bases.
+I have experience in supporting older large-scale code bases, code rewrites either to 
+different languages or complete refactors. I really like making things work and optimizing 
+things once they work.
 
 
 
@@ -181,7 +180,7 @@ Hobby Interests:
 -BoardGaming
 -Tolkien
 -Old Tech
--Roguelike Development
+-Roguelike Development, Videogame development
 -Beekeeping
 -
 

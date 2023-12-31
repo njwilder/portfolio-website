@@ -1,0 +1,75 @@
+
+IT 403: Intro to  Internet Technologies
+Course Description: "Introductory course exploring the fundamentals of Internet communications with an emphasis on the World Wide Web. Students develop an understanding of the Internet's underlying technologies and learn how to utilize them as contributing members of the Web community. Students become proficient with creating and publishing Web pages using HTML and CSS. No prior knowledge or experience is assumed."
+
+
+CS 415+416: Intro to Computer Science I + II
+Course Description: "Theory and practice of computer science. Algorithm development and analysis; data abstraction techniques; elementary data structures; dynamic memory manipulation; debugging; and program design issues. Computer systems and applications. Intended for CS majors."
+My first introduction to actual software development was through Java creating basic programs and attempting to understand Java and general language syntax.
+
+CS 501: Professional Ethics & Communication
+Course Description: "A mixed lecture/seminar course intended to improve both reasoning and ability to cA mixed lecture/seminar course intended to improve both reasoning and ability to communicate effectively in front of an audience. Students learn basic forms of ethical argument, they read about ethical situations in which technology and technology professions play a key role, and they participate in student-led discussions about the reading. Students also make oral presentations about both ethical and technical topics, and evaluate each other's presentations in order to improve their sense for what makes a good presentation.ommunicate effectively in front of an audience. Students learn basic forms of ethical argument, they read about ethical situations in which technology and technology professions play a key role, and they participate in student-led discussions about the reading. Students also make oral presentations about both ethical and technical topics, and evaluate each other's presentations in order to improve their sense for what makes a good presentation."
+
+
+CS 515: Data Structures & Intro to Algorithms
+Course Description: "Reviews basic data structures. Covers the mechanics and relative efficiencies of advanced data structures. Students will implement several data structures such as AVL trees, heaps, hash tables, and adjacency lists. Discusses abstract data types such as maps, priority queues, and graphs. Introduction to algorithm analysis, sorting algorithms, and graph algorithms."
+
+
+CS 520: Assembly Language Programming & Machine Organization
+Course Description: "Study software/hardware interaction, understand data and program representation. Topics include fundamentals of computer organization, CPU, memory, registers, addressing modes, instruction sets, assemblers, linkers, concurrency, memory hierarchy and memory management."
+This class is one of the first gatekeeper classes of UNH's Computer Science program. The course featured extensive low-level topics including overall basic computer architecture (von Neumann), data representation, IEEE Floating Point representation, translation, etc., general code assembly and linking, the Intel 64 system architecture and stack, POSIX threads and concurrency, exception handling, memory hierarchy and Virtual Memory, Cache memeory, CISC + RISC system architecture designs. Highlight code includes writing a full two-pass assembler for the VMX20 Virtual machine instruction set.
+This class is nuts. I nearly lost my mind and remember a period of a week and a half where I did nothing but code in the library. I was forced to keep attacking problems until I could solve them and not give up when everything seemed impossible. At the time I did not have too much experience and almost everything taught in the class was new to me, so the task of writing a two-pass assembler from scratch in C seemed insurmountable at the time.
+
+CS 619: Intro to Object Oriented Design and Development
+Course Description: "Principles of problem analysis and software design applied to the development cycle of a software system (i.e. from system requirements specification to design, implementation, and system test). Design and implementation using object-oriented principles, patterns, and tools. Experience in understanding and debugging software systems. Experience in working in groups."
+
+
+CS 620: Operating System Fundamentals
+Course Description: "Introduces operating system concepts and design. Process and memory management; scheduling; file systems; storage devices; inter-process communication."
+
+
+CS 659: Intro to Theory of Computation
+Course Description: "Review of sets, relations, and languages. Induction and diagonalization. Finite automata, context-free languages, pushdown automata. Basic complexity theory."
+
+
+CS 671 (renumbered 761): Program Language Concepts & Features
+Course Description: "Explores the main features of modern, high-level, general-purpose programming languages from the user (programmer) standpoint. Students learn how specific features of programming languages can be used effectively in solving programming problems. The course is also an opportunity to use paradigms that expand on simple imperative programming, such as object-oriented, functional and concurrent programming. Some knowledge of Java required."
+
+
+IT 612: Scripting Languages
+Course Description: "This course is a study of the class of programming languages and tools known as scripting languages. Topics include: a general discussion of language design and its relationship to the intended computing environment, introduction to the command-line environment, the role of scripts in controlling and connecting other programs and components, basic functionality of at least two scripting languages, and the syntax use of regular expressions. Programming projects in multiple languages will be required."
+
+
+CS 758: Algorithms
+Course Description: "An introduction to important concepts in the design and analysis of algorithms and data structures, including implementation, complexity analysis, and proofs of correctness."
+
+
+CS 791+792: Senior Project I + II
+Course Description 1: "First semester of the capstone design experience. Modern software engineering practices and tools are surveyed and applied in team projects. Students begin development on software projects proposed by faculty or external sponsors, including initial stages of design, implementation, and documentation, with an interim presentation of progress expected toward the end of the semester. Principles of security, testability, and maintainability are stressed."
+Course Description 2: "Students complete the project by implementing their design. Students work in teams. Successful completion of this course fulfills the Capstone Experience requirement for Computer Science majors."
+
+
+CS 750: Machine learning
+Course Description: "An introduction to fundamental concepts and common methods in machine learning. In addition to theoretical topics, the course involves hands-on experience in making predictions using synthetic and real-world datasets. Programming course required prior to taking this course."
+
+
+CS 775: Database Systems
+Course Description: "Introduction to database management systems --- design, implementation, and usage --- with focus on the relational model. Data description, manipulation, and query language in the context of MySQL. Schema design and normalization; indexes, transaction processing. Web access of databases (PHP); overview of XML and noSQL systems."
+
+
+CS 527: Fundamentals of Cybersecurity
+Course Description: "An entry-level introduction to a wide range of fundamental cybersecurity topics: authentication, authorization, auditing, cryptography, human element, network security, OS security, mobile & IoT security. The emphasis is to explain basic concepts with real world examples."
+
+
+CS 720: Systems Programming
+Course Description: "Study and simulation of various types of systems that include assemblers, linkers, memory management, concurrency and other resource management techniques."
+This course is in a similar vein to CS 520 in that it deals with the lower-level concepts of computing.
+
+CS 725: Computer Networks
+Course Description: "Introduction to fundamental concepts of computer networks and exploration of widely-used networking technologies. Topics include principles of congestion and error control; network routing; local, wireless and access networks; application protocol design; and network programming. In-depth discussion of the Internet suite of protocols."
+
+
+IT 666: Cybersecurity Practices
+Course Description: "Through readings, exercises, research papers, and exams students will acquire the skills needed to implement solutions for security-related issues. Students will discuss security policies, legislation, system procedures, tools, and techniques. Students will analyze the patterns that attackers use to gain access to systems and understand what is required to defeat those attack patterns. At the conclusion of the course, students will have a heightened sense of security in the actions they take when using and maintaining computer systems."
+
+
