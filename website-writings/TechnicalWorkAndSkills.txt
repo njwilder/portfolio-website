@@ -1,23 +1,35 @@
 
 Technical Work:
+**This may be something for the 'About me' detailed section
 While full time in college and working a part time job, I worked generally 40-80 hour work weeks at the InterOperability Laboratory at UNH. During that time, I spent every waking second of my time that wasn't spent on college assignments, studies, or my other job working on many of the various projects and issues being worked on at the IOL's Datacenter department. Datacenter was responsible primarily for developing test scripts for the NVMe SSD specification utilizing the libnvme public library to ensure drive conformance for various vendors. It was interesting going from someone who didn't know anything about anything that was going on (and was hoplessly lost in the lab environment), to what I would like to think would be a critical member of the department in the period of two years. I learned as much as I could and put 110% into every single day I worked and it was genuinely a once in a lifetime experience getting to understand the people I worked with and crafting this project together.
--Test plan development
--Release testing
--Intern supervising
--New Hire Training
--Employee Managemement
--'Cold Room' System management and Networking
--Attending+Leading Code Reviews and scrums
--Attending+Leading Management meetings
--Communications with Vendors
--Large scale code management of the 'Interact Test Tool'
--Majority of GUI rewrite
--New RLM Licensing implementation for 'Interact Test Tool'
--General wide-scale application rewrites
 For my efforts at the IOL I earned the UNH-IOL Student Leadership Scholarship and an IOL Star, as well as our department earning the 2022 Nebula award for our almost superhuman efforts during that time period.
 
-Skills acquired include:
--Python language competency along with familiarity with Tkinter from work and personal projects.
--C and C++ language competency along with familiarity with SDL (Simple DirectMedia Layer), OpenAL (cross platform audio API), and various other low-level applications.
--HTML+CSS+JavaScript for a couple personal projects and this portfolio.
+
+JOB GENERAL SKILLS ACQUIRED:
+-Deciphoring technical system specifications
+-BASH and Python script development
+-C low-level scripting and understanding the internals of dependency libraries
+-Product release testing
+-Participating and leading code reviews and scrums
+-Participating and leading management meetings
+-Large scale software engineering of product
+-Product GUI maintenance and refactor
+-Product Licensing implementation maintenance and refactor
+-Legacy code maintenance and refactor
+-New hire training
+-Intern supervising
+-Employee management
+-Vendor communication and problem solving
+-System hardware + software troubleshooting
+-Network troubleshooting
 -
+
+Other Technical Skills acquired include:
+-A lot of experience using version control tools such as Git and Bitbucket to work cooperatively with others (using an AGILE style workflow)
+-Python language competency along with familiarity with Tkinter from work and personal projects.
+-C and C++ language competency along with familiarity with libnvme, SDL (Simple DirectMedia Layer), OpenAL (cross platform audio API), and various other low-level applications.
+-HTML+CSS+JavaScript for a couple personal projects and this portfolio.
+-Self-taught electrical engineering skills from various books, online lectures, real life testing, and my (HACK System Architecture) personal project, along with a couple college courses on electrical computer engineering specifically.
+  -This includes custom Schematic and PCB design via KiCad along with having PCB designs realized (manufactured) and working!
+  -This also includes learning how to read datasheets and find proper ICs or create basic ICs from scratch via transistors.
+

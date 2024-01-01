@@ -21,42 +21,30 @@ I have been a video game junky since I could walk and talk. For better and for w
 have practically been raised off of games from the 1980's to present day. There 
 is something I enjoy about having a fixed set of rules to work by in order to achieve 
 various tasks. It makes you think in a different way to how you would think in real life.
-You start to understand and internalize the quirks of every game's game engine to 
+For instance you start to understand and internalize the quirks of a game engine to 
 best realize your goals within said game. 
 
-I have always been curious about how these miraculous devices could function. There was 
+I have always been curious about how these miraculous devices (consoles) could function. There was 
 something so captivating about taking a plastic game console cartridge, slotting 
 it into the system, and having something like Yoshi's Island appear on your television 
 screen ready to play! This didn't work if you tried stuffing something like a 
-peanut-butter and jelly sandwich into the cartridge slot, so what gives? What gave 
-these cartridges their power to control the beast that lay inside of the console's 
-outer shell?
-
-Fortunately/unfortunately the internet was still not very prominent in my household. 
-<maybe add a subtext thing about this here?>
-****I vividly remember a time where my dad and I were trying to install Diablo II on 
-PC from disk, and it required a constant internet connection to grab the necessary 
-1's and 0's for the game to function. If the process was interrupted in any way, then 
-the whole thing needed to be restarted. It took 2 weeks of continuous connection for 
-the game to be installed (and we had it fail many times)... However the end product 
-was so unbelievably worth it that it felt like a small price to pay at the time.
-****
-I didn't really understand at the time how to utilize the internet to get useful 
-information out of it, and it was flakey and strange anyways. Why not just find 
-things out for yourself or not question it and keep going with your life? 
+peanut-butter and jelly sandwich into the cartridge slot (don't worry, this was tested!), 
+so what gives? What gave these cartridges their power to control the beast that lay inside 
+the console's outer shell?
 
 Now I wouldn't say that I wasted my early years with gaming and generally being a 
 recluse (though I would like to think a partially well-mannered one who didn't cause 
-tooooo much trouble usually). I was always a very direction-less indecisive type of 
+tooooo much trouble). I was always a very direction-less indecisive type of 
 person growing up. I never found something that really interested me in a way that 
-would inspire me to do work. Sure I worked still and I knew that I enjoyed playing video 
-games, but I was always surrounded by the idea that video gaming was a juvenile activity 
-and you really should become something more practical. I was just going through the 
-motions in life. Nothing really caught my eye or interested me. I felt like the only 
-real resources I had to work with were my videogames, books, and movies. But this is 
-a very 'consumer' type lifestyle and I wanted to create new wonderful things! I just 
-didn't know how to in a meaningful way. I never truly understood what my options were 
-or where I could go and what I could do in life.
+would inspire me to do work. I worked still and I knew that I enjoyed playing video 
+games, but I was always surrounded by the idea that video gaming and computing was a 
+juvenile activity and you were always wasting your time using computers in general. 
+I was just going through the motions in life. Nothing really caught my eye or interested 
+me. I felt like the only real resources I had to work with were my videogames, books, 
+and movies. But this is a very 'consumer' type lifestyle and I wanted to create new 
+wonderful things! I just didn't know how to in a meaningful way, and I didn't know how to 
+learn if that makes any sense? I never truly understood what my options were or where I 
+could go and what I could do in life.
 
 I only realized going into college that I could actually aspire towards creating 
 things like videogames. As I explored 'software development' as a possible field 
@@ -66,39 +54,38 @@ I always thought this power was reserved only for the savant engineers of the an
 being something unattainable to the common people. I just never made the connection that 
 software was a viable career option and at the time I didn't really understand what 
 software development even meant or how it all worked, so I went with my gut and decided 
-to start studying for a degree in CS. I never chose CS for any reason other than 
-to develop a better understanding of the systems I used daily. There was something 
-about software development that tickled the same parts of my brain that videogames 
-did. It felt like you were working within a game, you are internalizing the quirks 
-software development computer architecture to design whatever you (or your employer) 
-fancies. It was fantastic!
+to start studying for a degree in CS because of my interest in the idea of development. 
+There was something about software development that tickled the same parts of my brain 
+that videogames did. It felt like you were working within a game, you are 
+internalizing the quirks of a given language and computer architecture to design whatever you 
+(or your employer) fancies. It was fantastic!
 
 A couple of years into college, I decided I wanted to get serious about software development 
-and improving myself as a person, so I ended up joining UNH's InterOperability Laboratory 
-(IOL). I was intimidated by the fact that I didn't know anything about coding, and shown 
-for certain that I was a hopelessly lost and terrible software designer (starting out). 
-However, with fantastic bosses and coworkers, I evolved into a truly passionate and hardworking 
-developer. I wasn't motivated by the money I was earning, but the truly fantastic environment and 
-the tons and tons of knowledge and experience I was getting daily. I was in love with the 
-work and the people I worked with. I voluntarily took insane 60-80 hour work weeks while in 
-full-time college (regrettably opting to sacrifice my grades chasing this new working high 
-in my life). I would accidentally pull all-nighters at my work troubleshooting strange 
-Over Fabrics drive issues, or bizzare specification details within cryptic drive tests. 
-I felt truly free at my work, something I never really felt in my personal life except with 
-things like video games. My coworkers and bosses grew concerned, but I assured them I was 
-having the time of my life. And I really was having the time of my life! I felt truly 
+and improving myself as a person, so I ended up applying, interviewing, and getting hired by UNH's 
+InterOperability Laboratory (IOL). I was intimidated by the fact that I didn't know anything about 
+coding, and shown for certain that I was a hopelessly lost and terrible software designer (starting out). 
+However, with fantastic bosses and coworkers and tireless effort, I evolved into a truly passionate and hardworking 
+developer. I was motivated by the truly fantastic environment and the tons and tons of knowledge and 
+experience I was getting daily. I was in love with the work and the people I worked with. I voluntarily 
+took insane 60-80 hour work weeks while also working part time and in full-time college (regrettably opting 
+to sacrifice my grades chasing this new working high in my life). I would accidentally pull all-nighters 
+at my work troubleshooting strange Over Fabrics drive issues, or bizzare specification details 
+within cryptic drive tests. I felt truly free at my work, something I never really felt in my 
+personal life except with things like video games. My coworkers and bosses grew concerned, but I 
+assured them I was having the time of my life. And I really was having the time of my life! I felt truly 
 alive deep in my work's server room troubleshooting long after the last employee of the 
 lab had left the building. Coding became like an artform to me, a strange form of expression 
 which allowed you to perform literal magic against these strange pieces of silicon and various 
 metals. It felt like every word or expression you created was like you pouring your very being 
-into the machine.
+into the machine. I ended up pouring my blood, sweat, and tears (not figuritively) into my first 
+legitimate technical job and I don't regret a single minute of that time I spent.
 
 I felt comfortable with the machines. They were always there and 
 they each had their own colorful personalities. The constant humming and whirring of the systems 
 was attractive to me. It felt like I was making some difference. I was a productive person and I 
 would like to think I had worked myself to a position of being important to my department. But I 
-also enjoyed teaching others this new artform I had discovered. Everyone else I had encountered 
-never seemed lost like I was, but I could relate to them in being lost by the work and the 
+also found that I enjoyed teaching others this new artform I had discovered. Everyone else I had 
+encountered never seemed lost like I was, but I could relate to them in being lost by the work and the 
 specifications we worked extensively with. This was like the glue that kept us all together, the 
 idea of this specification and a test plan created by the higher powers which we needed to obey.
 It made no sense and too much sense at the same time. It was such an intimidating set of documents 
@@ -112,22 +99,12 @@ meandering upbringing only being enlightened to this idea of self improvement re
 however I believe it to be one of the keys to being truly satisfied in life, something which I am 
 always seeking out.
 
+During my final semester for my Bachelors in Computer Science I went through a period of personal hardship along with 
+the most crippling burnout I have ever experienced in my life, so I decided to leave the the IOL and
+take a year off from software development to focus on recharging myself and reaquire certain hobbies ******LINK?******* 
+I had sacrificed by working so long and hard during college.
 
 
-HOBBY ABOUT:
-I believe it is important to reach out and grab anything that is even remotely 
-interesting to yourself with both hands. I subscribe to the "jack of all trades, 
-master of one" philosiphy where you should strive to try and learn as much about 
-everything as possible. It's probably a good idea to learn more thoroughly in 
-a field of some sort (for me being computing and electrical engineering as more of 
-a hobby), but we should not supress our urge to explore outside of our preconcieved 
-boundries. I am continually fascinated by just how much there is to learn about 
-and experience in this world.
-
-
-
-~~~~What was your journey to becoming a professional in what you do?~~~~
-I started my professional journey relatively recently (starting in college) after being lost and not knowing what I really wanted to do for most of my life, I realized that I had been working with computers my whole life and I should play towards my strengths. I was always curious about how things worked and I always wanted to discover
 
 ~~~~What are your inspirations? Where do you find inspiration?~~~~
 I found a lot of inspiration for coding to come from my first technical job at the 
@@ -141,7 +118,10 @@ things look hopeless.
 ~~~~What motivates you to do what you do?~~~~
 
 ~~~~What is your favorite part about being a software developer?~~~~
+I really enjoy problem solving. The feeling of getting your vision working the way you want is out of this world.
 
+I like the idea of building complex mechanisms and systems from smaller lower-level concepts and 
+implementations to create genuinely Earth-moving creations.
 
 ~~~~Favorite books which relate to your profession:~~~~
 The Soul of a New Machine: This book really speaks to me as someone who has really 
@@ -152,10 +132,24 @@ how they felt and worked on problems. I felt like I was really unique in how I f
 machines before sitting down and reading this book. I had come to discover that there where other 
 sick and twisted individuals out there who enjoyed working way past the call of duty on a project.
 
+The Elements of Computing Systems: Before reading this book, I felt like I never quite got a proper 
+idea of how computers actually work. I had gone through my entire time at college and the IOL working 
+with these mystical electrical contraptions and yet I felt like I was not really any closer to 
+understanding just how these systems were actually processing the code I wrote under the hood. Working 
+through this book finally made a lot of computing 'click' for me. I now more clearly understand why 
+instruction sets are a thing, how electrical signals in a system can move a character on a screen, and many 
+other aspects of computers. I believe it is important to know at least something about the hardware you 
+are trying to control with code to become a better developer. I wished I had read this book before I 
+started college or else I might have been less hung up on the "why"s of computer science.
+
 The Silmarillion: This is not a book that relates to my profession directly, but I think 
 unraveling the history and story of J.R.R. Tolkien's Middle-earth displays skills which 
 translate to software development pretty well. This being one of my favorite books shows 
-that I enjoy untangling seeming insurmountable------
+that I enjoy untangling seemingly insurmountable networks of character associations and 
+lore. I find the Silmarillion to be much like a software system in that there are many 
+components in the narrative which work together to produce a (relatively) coherent narrative 
+(product). It requires some natural obsessiveness to work through which I feel is shared among 
+passionate software developers. Also the story generally blows my socks off every time I read it.
 
 
 
@@ -169,10 +163,20 @@ things once they work.
 
 
 
+HOBBY ABOUT:
+I believe it is important to reach out and grab anything that is even remotely 
+interesting to yourself with both hands. I subscribe to the "jack of all trades, 
+master of one" philosophy where you should strive to try and learn as much about 
+everything as possible. It's probably a good idea to learn more thoroughly in 
+a field of some sort (for me being computing and electrical engineering as more of 
+a hobby), but we should not supress our urge to explore outside of our preconcieved 
+boundries. I am continually fascinated by just how much there is to learn about 
+and experience in this world.
+
 
 Hobby Interests:
 -Archery
--Oil Painting
+-Painting
 -Miniature Painting
 -Music (played and sung)
 -Electrical - (HACK System, SplitFlaps, etc.)
