@@ -1,11 +1,11 @@
 
 IT 403: Intro to  Internet Technologies
 Course Description: "Introductory course exploring the fundamentals of Internet communications with an emphasis on the World Wide Web. Students develop an understanding of the Internet's underlying technologies and learn how to utilize them as contributing members of the Web community. Students become proficient with creating and publishing Web pages using HTML and CSS. No prior knowledge or experience is assumed."
-
+I ended up writing my first ever HTML website about Lord of the Rings, specifically describing the different free peoples that inhabit Tolkien's Middle-earth. It was fun and I gained a lot of insight into how the internet works and how computers are able to communicate with each other.
 
 CS 415+416: Intro to Computer Science I + II
 Course Description: "Theory and practice of computer science. Algorithm development and analysis; data abstraction techniques; elementary data structures; dynamic memory manipulation; debugging; and program design issues. Computer systems and applications. Intended for CS majors."
-My first introduction to actual software development was through Java creating basic programs and attempting to understand Java and general language syntax.
+My first introduction to actual software development was through Java creating basic programs and attempting to understand Java and general language syntax. I remember one of my biggest struggles with this course was in trying to understand recursion and how it worked. That breakthrough moment of understanding was super satisfying!
 
 CS 501: Professional Ethics & Communication
 Course Description: "A mixed lecture/seminar course intended to improve both reasoning and ability to cA mixed lecture/seminar course intended to improve both reasoning and ability to communicate effectively in front of an audience. Students learn basic forms of ethical argument, they read about ethical situations in which technology and technology professions play a key role, and they participate in student-led discussions about the reading. Students also make oral presentations about both ethical and technical topics, and evaluate each other's presentations in order to improve their sense for what makes a good presentation.ommunicate effectively in front of an audience. Students learn basic forms of ethical argument, they read about ethical situations in which technology and technology professions play a key role, and they participate in student-led discussions about the reading. Students also make oral presentations about both ethical and technical topics, and evaluate each other's presentations in order to improve their sense for what makes a good presentation."
@@ -38,11 +38,11 @@ Course Description: "Explores the main features of modern, high-level, general-p
 
 IT 612: Scripting Languages
 Course Description: "This course is a study of the class of programming languages and tools known as scripting languages. Topics include: a general discussion of language design and its relationship to the intended computing environment, introduction to the command-line environment, the role of scripts in controlling and connecting other programs and components, basic functionality of at least two scripting languages, and the syntax use of regular expressions. Programming projects in multiple languages will be required."
-
+In this course I remember most clearly using the React JavaScript framework to dynamically code websites.
 
 CS 758: Algorithms
 Course Description: "An introduction to important concepts in the design and analysis of algorithms and data structures, including implementation, complexity analysis, and proofs of correctness."
-
+This class was tough. It's a shame it is such a late class in the degree program as I have not talked to anyone who has taken the class in one go (though everyone including me has their reasons for needing to retake this class).
 
 CS 791+792: Senior Project I + II
 Course Description 1: "First semester of the capstone design experience. Modern software engineering practices and tools are surveyed and applied in team projects. Students begin development on software projects proposed by faculty or external sponsors, including initial stages of design, implementation, and documentation, with an interim presentation of progress expected toward the end of the semester. Principles of security, testability, and maintainability are stressed."
