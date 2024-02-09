@@ -1,38 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Times New Roman", sans-serif;
-    box-sizing: border-box;
+/* 
+This site uses the lovely Ammo-8 Palette I found from https://lospec.com/palette-list/ammo-8 
+created by https://twitter.com/rsvpasap1
 
+Palette for reference (dark to light):
+#040c06
+#112318
+#1e3a29
+#305d42
+#4d8061
+#89a257
+#bedc7f
+#eeffcc
+*/
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-html{
+/* Custom definitions */
+:root {
+    --colorDark: #112318;
+    --colorAccent: #89a257;
+    --colorLight: #eeffcc;
+
+    /* default font stuff */
+    --ffMain: "Arial", sans-serif;
+    --ffMono: "Courier New", monospace;
+
+    --fwReg: 300;
+    --fwBold: 900;
+
+    --fsH1: 4.5rem;
+    --fsH2: 3.75rem;
+    --fsH3: 1.5rem;
+    --fsBody: 1.125rem;
+}
+
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    /* padding-left:10%;
-    padding-right:10%; */
-    background: black;
-    color: white;
-    /* background-image: url(res/monke.png);
-    background-size: contain; */
+body {
+    /* background: var(--colorDark); */
+    background:red;
+    color: var(--colorLight);
+    margin: 0;
+    padding: 0;
+    font-family: var(--ffMain);
+    font-size: var(--fsBody);
+    line-height:1.6;
 }
 
-h1{
+img {
+    display: block;
+    max-width: 100%
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
     text-align: center;
 }
-p{
+h1 {font-size: var(--fsH1);}
+h2 {font-size: var(--fsH2);}
+h3 {font-size: var(--fsH3);}
+
+p {
     padding: 0.5% 10% 0.5% 10%;
 }
 
-/* Used for headerText */
-@keyframes fadeIn {
-    0%   {opacity: 0;}
-    20%  {opacity: 0;}
-    100% {opacity: 1;}
-}
-
+/* This is to create the effect of scrolling over the header image */
 .headerBackgroundImg{
     width: 100%;
     height: 100%;
@@ -44,37 +83,124 @@ p{
 }
 
 /* Top Links */
-.nav_list{
+.nav_list {
     display: inline;
     margin: 10px;
 }
-.nav_list a:hover{
-    color: orange;
-}
-.nav_link{
+.nav_link {
     color: aqua;
     font-size: 1.2em;
     text-decoration: none;
 }
+.nav_link:hover {
+    color: orange;
+}
 
-.pageSpacer{
+.pageSpacer {
     padding-top: 30%;
     padding-bottom: 30%;
 }
 
-.headerText{
+.headerText {
     color: orangered;
     padding-left:10%;
     padding-right:50%;
     animation: fadeIn 2s;
 }
 
-.aboutPage{
-    background-color: green;
+/* .background_transition {
+
+} */
+
+.aboutPage {
+    /* display: block; */
+    /* position: relative; */
+    /* grid-template-columns: min-content max-content; */
+    display: table;
+    margin: 0 auto;
+    background-color: var(--colorDark);
 }
-.aboutPage h1{
-    color: blue;
+
+/* .about_header {
+    grid-area: "header";
+} */
+
+.about_img {
+    float: left;
+    max-width: 50%;
+    padding: 2.5%;
 }
-.aboutPage p{
-    color: yellow;
+.about_text {
+}
+.clear {
+    clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Used for headerText */
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* DYNAMIC STYLING SETTINGS */
+
+/* Extra Large Screens */
+@media only screen and (min-width: 1201px) {
+    :root {
+        --fsH1: 3rem;
+        --fsH2: 2.25rem;
+        --fsH3: 1.25rem;
+        --fsBody: 1rem;
+    }
+}
+
+/* Larger Screens */
+@media only screen and (max-width: 1200px) {
+    :root {
+        --fsH1: 3rem;
+        --fsH2: 2.25rem;
+        --fsH3: 1.25rem;
+        --fsBody: 1rem;
+    }
+}
+
+/* Smaller Screens */
+@media only screen and (max-width: 1024px) {
+    :root {
+        --fsH1: 3rem;
+        --fsH2: 2.25rem;
+        --fsH3: 1.25rem;
+        --fsBody: 1rem;
+    }
+}
+/* TODO: DONT FORGET ABOUT LANDSCAPE AND PORTRAIT CHECKS FOR STYLING */
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    :root {
+        --fsH1: 3rem;
+        --fsH2: 2.25rem;
+        --fsH3: 1.25rem;
+        --fsBody: 1rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    :root {
+        --fsH1: 3rem;
+        --fsH2: 2.25rem;
+        --fsH3: 1.25rem;
+        --fsBody: 1rem;
+    }
 }
