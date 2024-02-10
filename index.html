@@ -10,35 +10,35 @@
     </head>
     <body>
 
+        <nav class="header_nav">
+            <ul class="nav_list">
+                <li class="nav_listItem"><a class="nav_link" href="#home">Home</a></li>
+                <li class="nav_listItem"><a class="nav_link" href="#about">About</a></li>
+                <li class="nav_listItem"><a class="nav_link" href="#skills">Skills</a></li>
+                <li class="nav_listItem"><a class="nav_link" href="#projects">Projects</a></li>
+                <li class="nav_listItem"><a class="nav_link" href="#resume">R&eacutesum&eacute</a></li>
+                <li class="nav_listItem"><a class="nav_link" href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
+
         <div class="headerBackgroundImg" id="home">
-            <nav class="header_nav">
-                <ul class="nav_list">
-                    <li class="nav_listItem"><a class="nav_link" href="#home">Home</a></li>
-                    <li class="nav_listItem"><a class="nav_link" href="#about">About</a></li>
-                    <li class="nav_listItem"><a class="nav_link" href="#skills">Skills</a></li>
-                    <li class="nav_listItem"><a class="nav_link" href="#projects">Projects</a></li>
-                    <li class="nav_listItem"><a class="nav_link" href="#resume">R&eacutesum&eacute</a></li>
-                    <li class="nav_listItem"><a class="nav_link" href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-
             <div class="pageSpacer">
-                <h1 class="headerText">Hi, my name is Noah and I love computers!</h1>
+                <h1 class="headerText">My name is Noah and I love computers!</h1>
             </div>
+        </div>
 
+        <div class="aboutPage" id="about">
             <img src="res/test_transition.png" alt="" class="background_transition">
+            <h1 class="about_header">About</h1>
+            <img class="about_img" src="res/headshot_glasses.jpg" alt="A headshot of Noah smiling.">
+            <p class="about_text">
+                One of my greatest joys in life is solving technical problems. A former librarian and Datacenter lab technician for the University of New Hampshire's 'InterOperability Laboratory', I excel in a strong teamwork oriented programming/debugging environment. I enjoy digging into complex issues and collaborating with others (or working solo utilizing the '<a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber ducky</a>' technique of holding intense technical debates with inanimate objects) to get the job done, and done right&#8482. I have a tendancy to give more weight to supportable and correct code over rushing for a solution and calling it good.
+                <br>If you want to learn more about me: <a href="about_detailed.html">CLICK HERE!</a>
+                <br>If you want to know more about the less technically professional things I enjoy doing: <a href="hobby_stuff.html">CLICK HERE!</a>
+            </p>
 
-            <div class="aboutPage" id="about">
-                <h1 class="about_header">About</h1>
-                <img class="about_img" src="res/headshot_glasses.jpg" alt="A headshot of Noah smiling.">
-                <p class="about_text">
-                    One of my greatest joys in life is solving technical problems. A former librarian and Datacenter lab technician for the University of New Hampshire's 'InterOperability Laboratory', I excel in a strong teamwork oriented programming/debugging environment. I enjoy digging into complex issues and collaborating with others (or working solo utilizing the '<a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber ducky</a>' technique of holding intense technical debates with inanimate objects) to get the job done, and done right&#8482. I have a tendancy to give more weight to supportable and correct code over rushing for a solution and calling it good.
-                    <br>If you want to learn more about me: <a href="about_detailed.html">CLICK HERE!</a>
-                    <br>If you want to know more about the less technically professional things I enjoy doing: <a href="hobby_stuff.html">CLICK HERE!</a>
-                </p>
-
-                <div class="clear"></div>
-            </div>
+            <div class="clear"></div>
         </div>
 
         <div class="skillsPage" id="skills">
@@ -47,7 +47,8 @@
             <ul class="skills_languageList">
                 <li class="language_listItem">Python</li>
                 <li class="language_listItem">C and C++</li>
-                <li class="language_listItem">HTML, CSS, and JavaScript.</li>
+                <li class="language_listItem">HTML, CSS, and JavaScript</li>
+                <li class="language_listItem">SQL and MySQL</li>
                 <li class="language_listItem">Java</li>
                 <li class="language_listItem">Scala</li>
                 <li class="language_listItem">CLISP</li>
@@ -55,6 +56,22 @@
                 <li class="language_listItem">HACK System Architecture ASM and Bytecode</li>
                 <li class="language_listItem">More than my fair share of <a href="https://lhartikk.github.io/ArnoldC/">ArnoldC</a></li>
             </ul>
+
+            <h2 class="skills_libraryAndFrameworkHeader">Libraries and Frameworks</h2>
+            <h3 class="libraryAndFrameworkHeader">Python</h3>
+            <ul class="skills_libraryAndFrameworkList">
+                <li class="libraryAndFramework_listItem"><a href="https://docs.python.org/3/library/tkinter.html">'tkinter'</a>: GUI Creation and Interfacing</li>
+            </ul>
+            <h3 class="libraryAndFrameworkHeader">C++</h3>
+            <ul class="skills_libraryAndFrameworkList">
+                <li class="libraryAndFramework_listItem"><a href="https://www.libsdl.org/">'SDL'</a>: Cross-platform low level access to system hardware</li>
+                <li class="libraryAndFramework_listItem"><a href="https://www.openal.org/">'OpenAL'</a>: Cross-platform audio API</li>
+            </ul>
+            <h3 class="libraryAndFrameworkHeader">JavaScript</h3>
+            <ul class="skills_libraryAndFrameworkList">
+                <li class="libraryAndFramework_listItem"><a href="https://react.dev/">'React'</a>: Web UI</li>
+            </ul>
+
             <h2 class="skills_professionalSkillsHeader">Professional Skills</h2>
             <ul class="skills_professionalSkillsList">
                 <li class="professionalSkills_listItem">Analyzing technical specifications and documents</li>
@@ -65,6 +82,7 @@
                 <li class="professionalSkills_listItem">Legacy code maintenance and refactoring</li>
                 <li class="professionalSkills_listItem">New hire training</li>
                 <li class="professionalSkills_listItem">General Employee and Intern management</li>
+                <li class="professionalSkills_listItem">Development team lead</li>
                 <li class="professionalSkills_listItem">Customer support</li>
                 <li class="professionalSkills_listItem">System hardware and software troubleshooting</li>
                 <li class="professionalSkills_listItem">Network troubleshooting</li>
@@ -84,8 +102,8 @@
 
         </div>
 
+</div>
         <!-- JS Code -->
-        <script src="/app.js"></script>
-
+        <script src="app.js"></script>
     </body>
 </html>

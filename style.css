@@ -32,10 +32,16 @@ Palette for reference (dark to light):
     --fwReg: 300;
     --fwBold: 900;
 
-    --fsH1: 4.5rem;
-    --fsH2: 3.75rem;
-    --fsH3: 1.5rem;
-    --fsBody: 1.125rem;
+    --fsHeader: 2rem;
+    --fsH1: 3rem;
+    --fsH2: 2.5rem;
+    --fsH3: 2rem;
+    --fsBody: 1.5rem;
+
+    --headerPadding: 5%;
+    --textPadding: 5%;
+    --listPaddingLeft: 10%;
+    --listPaddingRight: 5%;
 }
 
 
@@ -54,12 +60,8 @@ body {
     line-height:1.6;
 }
 
-img {
-    display: block;
-    max-width: 100%
-}
-
 h1, h2, h3 {
+    padding: var(--headerPadding);
     line-height: 1.1;
     text-align: center;
 }
@@ -68,32 +70,57 @@ h2 {font-size: var(--fsH2);}
 h3 {font-size: var(--fsH3);}
 
 p {
-    padding: 0.5% 10% 0.5% 10%;
+    padding: var(--textPadding);
+    font-size: var(--fsBody);
 }
 
-/* This is to create the effect of scrolling over the header image */
+ul {
+    list-style-type: disc;
+    padding: 0 var(--listPaddingRight) 0 var(--listPaddingLeft);
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+a {
+    color: var(--colorAccent);
+}
+
 .headerBackgroundImg{
     width: 100%;
-    height: 100%;
-    background-image: url(res/Header_img.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+    background-image: url(res/Header_img_mobile.jpg);
+    background-size:cover;
+    background-position: center;
     background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: -1;
 }
 
 /* Top Links */
 .nav_list {
-    display: inline;
-    margin: 10px;
+    display: none; /* TODO: Remove display setting when actually working on nav */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+}
+.nav_listItem {
+    float: left;
 }
 .nav_link {
-    color: aqua;
-    font-size: 1.2em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: var(--fsHeader);
 }
-.nav_link:hover {
-    color: orange;
+.nav_listItem:hover {
+    background-color: blue;
 }
 
 .pageSpacer {
@@ -108,33 +135,34 @@ p {
     animation: fadeIn 2s;
 }
 
-/* .background_transition {
-
-} */
+.background_transition {
+    position: relative;
+    bottom: 78px;
+}
 
 .aboutPage {
-    /* display: block; */
-    /* position: relative; */
-    /* grid-template-columns: min-content max-content; */
     display: table;
     margin: 0 auto;
+    background-image: url(res/potential_background_overlay.png);
     background-color: var(--colorDark);
 }
 
-/* .about_header {
-    grid-area: "header";
-} */
-
+/* mobile version of img, probably wants to be changed for higher resolutions */
 .about_img {
-    float: left;
-    max-width: 50%;
-    padding: 2.5%;
+    max-width: 90%;
+    margin: 5%;
 }
-.about_text {
-}
+
 .clear {
     clear:both;
 }
+
+.skillsPage {
+    background-color: var(--colorDark);
+}
+
+
+
 
 
 
@@ -154,53 +182,34 @@ p {
 }
 
 /* DYNAMIC STYLING SETTINGS */
+/* TODO: DONT FORGET ABOUT LANDSCAPE AND PORTRAIT CHECKS FOR STYLING */
+    /* OLD about img settings that work for larger screen widths */
+    /* .about_img {
+        float: left;
+        max-width: 50%;
+        padding: 2.5%;
+    } */
 
 /* Extra Large Screens */
 @media only screen and (min-width: 1201px) {
-    :root {
-        --fsH1: 3rem;
-        --fsH2: 2.25rem;
-        --fsH3: 1.25rem;
-        --fsBody: 1rem;
-    }
 }
 
 /* Larger Screens */
 @media only screen and (max-width: 1200px) {
-    :root {
-        --fsH1: 3rem;
-        --fsH2: 2.25rem;
-        --fsH3: 1.25rem;
-        --fsBody: 1rem;
-    }
+
+
 }
 
 /* Smaller Screens */
 @media only screen and (max-width: 1024px) {
-    :root {
-        --fsH1: 3rem;
-        --fsH2: 2.25rem;
-        --fsH3: 1.25rem;
-        --fsBody: 1rem;
-    }
+
 }
-/* TODO: DONT FORGET ABOUT LANDSCAPE AND PORTRAIT CHECKS FOR STYLING */
+
 /* Tablets */
 @media only screen and (max-width: 768px) {
-    :root {
-        --fsH1: 3rem;
-        --fsH2: 2.25rem;
-        --fsH3: 1.25rem;
-        --fsBody: 1rem;
-    }
 }
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
-    :root {
-        --fsH1: 3rem;
-        --fsH2: 2.25rem;
-        --fsH3: 1.25rem;
-        --fsBody: 1rem;
-    }
+    
 }
