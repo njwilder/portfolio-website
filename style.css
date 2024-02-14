@@ -140,11 +140,26 @@ a {
     bottom: 78px;
 }
 
+.contentBackgroundImg {
+    /* background-image: url(res/potential_background_overlay.png); */
+    background-color: var(--colorDark);
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+/* .page {
+    background-image: url(res/potential_background_overlay.png);
+    background-color: var(--colorDark);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
 .aboutPage {
     display: table;
     margin: 0 auto;
-    background-image: url(res/potential_background_overlay.png);
-    background-color: var(--colorDark);
+    /* background-image: url(res/potential_background_overlay.png);
+    background-color: var(--colorDark); */
 }
 
 /* mobile version of img, probably wants to be changed for higher resolutions */
@@ -157,12 +172,20 @@ a {
     clear:both;
 }
 
-.skillsPage {
+/* .skillsPage {
+    background-image: url(res/potential_background_overlay.png);
     background-color: var(--colorDark);
 }
 
+.projectsPage {
+    background-image: url(res/potential_background_overlay.png);
+    background-color: var(--colorDark);
+} */
 
-
+.projects_projectItem {
+    /* TODO: Change projectItem display when presentable projects are done/presentable! */
+    display: none;
+}
 
 
 
