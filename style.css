@@ -179,12 +179,21 @@ a {
     clear:both;
 }
 
-/* 
-    Projects grid goals:
-    - display a related image and the name of the project above (or below?) it
-    - on hover, display short description for project with light black background over image of project
-    - on click, load link
-*/
+/* Custom image bullets for languages */
+.skills_languageList {
+    list-style:none;
+}
+.skills_languageList li {
+    padding-left: var(--listPaddingLeft);
+    text-indent: calc(var(--listPaddingLeft) * -1);
+}
+.skills_languageList img {
+    display: inline;
+    height: 1rem;
+    width: 1rem;
+}
+
+
 
 
 .projectsPage_grid {
