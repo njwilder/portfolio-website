@@ -15,7 +15,7 @@
                 <li class="nav_listItem"><a class="nav_link" href="#home">Home</a></li>
                 <li class="nav_listItem"><a class="nav_link" href="#about">About</a></li>
                 <li class="nav_listItem"><a class="nav_link" href="#skills">Skills</a></li>
-                <li class="nav_listItem"><a class="nav_link" href="#projects">Projects</a></li>
+                <li class="nav_listItem"><a class="nav_link" href="#projects">Projects/Work</a></li>
                 <li class="nav_listItem"><a class="nav_link" href="#resume">R&eacutesum&eacute</a></li>
                 <li class="nav_listItem"><a class="nav_link" href="#contact">Contact Me</a></li>
             </ul>
@@ -34,11 +34,18 @@
                 <img src="res/test_transition.png" alt="" class="background_transition">
                 <h1 class="about_header">About</h1>
                 <img class="about_img" src="res/headshot_glasses.jpg" alt="A headshot of Noah smiling.">
-                <p class="about_text">One of my greatest joys in life is solving technical problems. A former librarian and Datacenter lab technician for the University of New Hampshire's '<a href="https://www.iol.unh.edu">InterOperability Laboratory</a>', I excel in a strong teamwork oriented programming/debugging environment. I enjoy digging into complex issues and collaborating with others (or working solo utilizing the '<a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber ducky</a>' technique of holding intense technical debates with inanimate objects) to get the job done, and done right&#8482.</p>
+                <p class="about_text">One of my greatest joys in life is solving technical problems. A former librarian and Datacenter lab technician for the University of New Hampshire's '<a href="https://www.iol.unh.edu">InterOperability Laboratory</a>', I excel in a strong teamwork oriented programming/debugging environment. I enjoy digging into complex issues and collaborating with others (or working solo utilizing the '<a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber ducky</a>' technique) to get the job done, and done right&#8482.</p>
                 <p class="about_text">I have a tendancy to give more weight to supportable and correct code over rushing for a solution and calling it good. When I am not feverishly coding, I enjoy oil painting with my little German companion and partaking in as many strange hobbies and side activities I can get my hands on!</p>
-                <!-- <img class="about_img" src="res/"> -->
                 <p class="about_text">***INCLUDE IMAGE OF ME WITH LINCOLN HERE!***</p>
-                <p class="about_text">If you want to get to know more about me: <a href="about_detailed.html">CLICK HERE!</a></p>
+                <!-- <img class="about_img" src="res/"> -->
+                <p class="about_text">If you want to get to know more about me: 
+                    <a class="about_detailedLink" href="about_detailed.html">
+                        <span class="desktopText">CLICK HERE!</span>
+                        <!-- This is for mobile users, no display by default -->
+                        <span class="mobileText">TAP HERE!</span> 
+                    </a>
+                </p>
+
 
                 <div class="clear"></div>
             </div>
@@ -92,26 +99,61 @@
             </div>
 
             <div class="projectsPage" id="projects">
-                <h1 class="projectsHeader">Projects</h1>
-
-                <p>This is where my various projects will be. At the moment my projects are scattered about in half-finished states due to being busy with work.</p>
-
-                <!-- Probably buttons of some sort (but fancy) -->
-                <!-- Maybe include the IOL as a project, then drop the professional skills tab in favor of a page describing my work in more detail? -->
-                <!-- Add tf2 random weapon website (make it you dope!) -->
-                <!-- Add HACK system architecture project -->
-                <!-- Add video game from scratch project -->
-                <div class="projects_projectItem">
-                    <h2 class="projectItem_projectHeader">Project 1</h2>
+                <h1 class="projectsHeader">Projects/Work</h1>
+                <div class="projectsPage_grid">
+                    <!-- Probably buttons of some sort (but fancy) -->
+                    <!-- Maybe include the IOL as a project, then drop the professional skills tab in favor of a page describing my work in more detail? -->
+                    <!-- Add tf2 random weapon website (make it you dope!) -->
+                    <!-- Add HACK system architecture project -->
+                    <!-- Add video game from scratch project -->
+                    <a class="projectItem" href="projects/project_iol.html">
+                        <img src="res/french.jpg" alt="">
+                        <h3>InterOperability Laboratory</h3>
+                        <p>
+                            An exploration of some of my efforts, things I learned, and my experiences 
+                            during my 2 years at the IOL while staying faithful to my NDA. 
+                            <span class="mobileText">Tap</span>
+                            <span class="desktopText">Click</span> 
+                            here to learn more!
+                        </p>
+                    </a>
+                    <a class="projectItem" href="projects/project_iol.html">
+                        <img src="res/lincoln_jazzed.jpg" alt="">
+                        <h3>Team Fortress 2 Random Loadout Generator</h3>
+                        <p>
+                            A website I made to practice HTML, CSS, and JavaScript. Random loadout 
+                            generator for the videogame 'Team Fortress 2'. 
+                            <span class="mobileText">Tap</span>
+                            <span class="desktopText">Click</span> 
+                            this project to learn more about it!
+                        </p>
+                    </a>
+                    <a class="projectItem" href="index.html">
+                        <img src="res/lincoln_derp.jpg" alt="">
+                        <h3>Portfolio Website</h3>
+                        <p>
+                            This portfolio website to refamiliarize myself with HTML and CSS. I wanted 
+                            to avoid using JavaScript and learn about hosting a website via WIP.
+                            <span class="mobileText">Tap</span>
+                            <span class="desktopText">Click</span> 
+                            this project to learn more about it!
+                        </p>
+                    </a>
                 </div>
-                <div class="projects_projectItem">
-                    <h2 class="projectItem_projectHeader">Project 2</h2>
-                </div>
-
             </div>
 
+
             <div class="contactPage">
-                <!-- TODO: include resume and points of contact -->
+                <h1 class="contactHeader">Contact</h1>
+                <p>
+                    Email: njwilder506@gmail.com
+                    <br/>
+                    <a href="https://www.linkedin.com/in/noah-wilder-9005662b3/">Linkedin</a>
+                    <br/>
+                    <a href="https://github.com/njwilder">Github</a>
+                    <br/>
+                    <a href="https://drive.google.com/file/d/1Mmbkk-rxpoCyG_BOURfvV5lFJB5aDD6F/view?usp=sharing">Resume</a>
+                </p>
             </div>
 
         </div>

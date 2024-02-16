@@ -42,6 +42,12 @@ Palette for reference (dark to light):
     --textPadding: 5%;
     --listPaddingLeft: 10%;
     --listPaddingRight: 5%;
+
+    --imgWidth: 90%;
+    --imgHeight: 20%;
+    --imgMargin: 5%;
+
+    --gridGap: 5%;
 }
 
 
@@ -164,36 +170,91 @@ a {
 
 /* mobile version of img, probably wants to be changed for higher resolutions */
 .about_img {
-    max-width: 90%;
-    margin: 5%;
+    max-width: var(--imgWidth);
+    margin: var(--imgMargin);
+    border-radius: 20px;
 }
 
 .clear {
     clear:both;
 }
 
-/* .skillsPage {
-    background-image: url(res/potential_background_overlay.png);
-    background-color: var(--colorDark);
+/* 
+    Projects grid goals:
+    - display a related image and the name of the project above (or below?) it
+    - on hover, display short description for project with light black background over image of project
+    - on click, load link
+*/
+
+
+.projectsPage_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    background-color: var(--colorLight);
+}
+.projectItem {
+    margin: var(--imgMargin);
+    position: relative;
+    border-radius: 20px;
+    background-color: blue;
+
+    /* For click effect */
+    border-style: none;
+    border-color: black;
+    border-width: 6px;
+}
+/* For project description */
+.projectItem:hover p {
+    opacity: 1;
+}
+/* For click effect */
+.projectItem:active {
+    border-style: solid;
+}
+.projectItem img {
+    height: calc(100%/320px);
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+/* Project Name */
+.projectItem h3 {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    /* Hack for text outlines */
+    text-shadow: 3px  3px 2px #000,
+                -3px  3px 2px #000,
+                -3px -3px 0   #000,
+                 3px -3px 0   #000;
+}
+/* Project Description */
+.projectItem p {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: inherit;
+    overflow:hidden;
 }
 
-.projectsPage {
-    background-image: url(res/potential_background_overlay.png);
-    background-color: var(--colorDark);
-} */
 
-.projects_projectItem {
-    /* TODO: Change projectItem display when presentable projects are done/presentable! */
+
+
+
+
+/* For mobile devices, display proper language */
+.desktopText {
+    display: inline;
+}
+.mobileText {
     display: none;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -235,4 +296,11 @@ a {
 /* Mobile */
 @media only screen and (max-width: 480px) {
     
+}
+
+/* If user is using a touch device */
+@media (hover: none) {
+    /* Change link text for detailed about */
+    .mobileText {display:inline;}
+    .desktopText {display:none;}
 }

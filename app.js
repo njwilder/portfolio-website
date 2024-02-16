@@ -1,4 +1,25 @@
 
+
+function buttonClicked(button) {
+    console.log("Button clicked...");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * Helper function for toggleCard
  * @param {*} imgId img Element Id to change the src of
@@ -34,3 +55,11 @@ function toggleCard(imgId, dropdownId) {
     toggleCardImg(imgId);
     toggleCardDropdown(dropdownId);
 }
+
+
+
+
+
+
+
+
