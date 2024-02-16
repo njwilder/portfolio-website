@@ -21,6 +21,7 @@ Palette for reference (dark to light):
 
 /* Custom definitions */
 :root {
+    --colorSuperDark:  #040c06;
     --colorDark: #112318;
     --colorAccent: #89a257;
     --colorLight: #eeffcc;
@@ -47,7 +48,16 @@ Palette for reference (dark to light):
     --imgHeight: 20%;
     --imgMargin: 5%;
 
+    --projItemSideWidth: 385px;
+    --projItemSideHeight: var(--projItemSideWidth);
+
     --gridGap: 5%;
+
+    /* Text shadow border hack for text outline */
+    --txtOutline: 3px  3px 2px #000,
+                 -3px  3px 2px #000,
+                 -3px -3px 0   #000,
+                  3px -3px 0   #000;
 }
 
 
@@ -97,6 +107,8 @@ a {
 .headerBackgroundImg{
     width: 100%;
     background-image: url(res/Header_img_mobile.jpg);
+    /* background-size:cover; */
+    background-size: 100% 100%;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +119,8 @@ a {
 
 /* Top Links */
 .nav_list {
-    display: none; /* TODO: Remove display setting when actually working on nav */
+    /* TODO: Remove display setting when actually working on nav */
+    display: none; 
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -139,27 +152,12 @@ a {
     padding-left:10%;
     padding-right:50%;
     animation: fadeIn 2s;
+    text-shadow: var(--txtOutline);
 }
 
-.background_transition {
-    position: relative;
-    bottom: 78px;
-}
-
-.contentBackgroundImg {
-    /* background-image: url(res/potential_background_overlay.png); */
+.contentBackground {
     background-color: var(--colorDark);
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
-/* .page {
-    background-image: url(res/potential_background_overlay.png);
-    background-color: var(--colorDark);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
 
 .aboutPage {
     display: table;
@@ -197,16 +195,19 @@ a {
 
 
 .projectsPage_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--projItemSideWidth));
+    grid-template-rows: repeat(auto-fit, var(--projItemSideHeight));
     background-color: var(--colorLight);
+    justify-content: center;
+    /* background-color: var(--colorDark); */
 }
 .projectItem {
     margin: var(--imgMargin);
     position: relative;
     border-radius: 20px;
-    background-color: blue;
+    background-color: var(--colorSuperDark);
 
     /* For click effect */
     border-style: none;
@@ -222,7 +223,6 @@ a {
     border-style: solid;
 }
 .projectItem img {
-    height: calc(100%/320px);
     width: 100%;
     object-fit: cover;
     border-radius: inherit;
@@ -233,17 +233,12 @@ a {
     bottom: 0%;
     width: 100%;
     text-align: center;
-    /* Hack for text outlines */
-    text-shadow: 3px  3px 2px #000,
-                -3px  3px 2px #000,
-                -3px -3px 0   #000,
-                 3px -3px 0   #000;
+    text-shadow: var(--txtOutline);
 }
 /* Project Description */
 .projectItem p {
     position: absolute;
     top: 0%;
-    width: 100%;
     height: 100%;
     opacity: 0;
     transition: 0.5s;
@@ -298,6 +293,10 @@ a {
 
 }
 
+
+/* ALSO CHECK FOR LANDSCAPE MODE VS. PORTRAIT MODE */
+/* EG. SHIFT PROJECT DESCRIPTIONS TO RIGHT FOR MOBILE */
+
 /* Tablets */
 @media only screen and (max-width: 768px) {
 }
@@ -309,7 +308,21 @@ a {
 
 /* If user is using a touch device */
 @media (hover: none) {
-    /* Change link text for detailed about */
+    /* Change desktop specific text to mobile text */
     .mobileText {display:inline;}
     .desktopText {display:none;}
+
+    /* Change project presentation to include descriptions without hovering */
+    .projectsPage_grid {
+        grid-template-rows: repeat(auto-fit calc(var(--projItemSideHeight) * 2));
+    }
+    .projectItem h3 {
+        bottom: calc(var(--projItemSideHeight));
+    }
+    .projectItem p {
+        position: relative;
+        height: var(--projItemSideHeight);
+        opacity: 1;
+        background-color: transparent;
+    }
 }
