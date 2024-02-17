@@ -21,10 +21,15 @@ Palette for reference (dark to light):
 
 /* Custom definitions */
 :root {
-    --colorSuperDark:  #040c06;
-    --colorDark: #112318;
-    --colorAccent: #89a257;
-    --colorLight: #eeffcc;
+    /* Ammo-8 Color Palette */
+    --colorDark3:  #040c06;
+    --colorDark2:  #112318;
+    --colorDark1:  #1e3a29;
+    --colorDark0:  #305d42;
+    --colorLight0: #4d8061;
+    --colorLight1: #89a257;
+    --colorLight2: #bedc7f;
+    --colorLight3: #eeffcc;
 
     /* default font stuff */
     --ffMain: "Arial", sans-serif;
@@ -32,6 +37,9 @@ Palette for reference (dark to light):
 
     --fwReg: 300;
     --fwBold: 900;
+
+    --borderWidth: 10px;
+    --borderRoundedCorners: 20px;
 
     --fsHeader: 2rem;
     --fsH1: 3rem;
@@ -48,16 +56,18 @@ Palette for reference (dark to light):
     --imgHeight: 20%;
     --imgMargin: 5%;
 
+    --transitionImgHeight: 100px;
+
+    --skillsMargin: 5%;
+
     --projItemSideWidth: 385px;
     --projItemSideHeight: var(--projItemSideWidth);
 
-    --gridGap: 5%;
-
     /* Text shadow border hack for text outline */
-    --txtOutline: 3px  3px 2px #000,
-                 -3px  3px 2px #000,
-                 -3px -3px 0   #000,
-                  3px -3px 0   #000;
+    --txtOutline: 3px  3px 2px var(--colorDark3),
+                 -3px  3px 2px var(--colorDark3),
+                 -3px -3px 0   var(--colorDark3),
+                  3px -3px 0   var(--colorDark3);
 }
 
 
@@ -66,14 +76,11 @@ html {
 }
 
 body {
-    /* background: var(--colorDark); */
-    background:red;
-    color: var(--colorLight);
-    margin: 0;
-    padding: 0;
     font-family: var(--ffMain);
     font-size: var(--fsBody);
     line-height:1.6;
+    background-color: red;
+    color: val(--colorLight2);
 }
 
 h1, h2, h3 {
@@ -100,15 +107,32 @@ img {
     max-width: 100%
 }
 
-a {
-    color: var(--colorAccent);
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: var(--colorLight0);
 }
+
+/* For mobile devices, display proper language */
+.desktopText {
+    display: inline;
+}
+.mobileText {
+    display: none;
+}
+
+/* Used for clearing floats in the page */
+.clear {
+    clear:both;
+}
+
+
+
 
 .headerBackgroundImg{
     width: 100%;
+    /* Change from vh to percentage somehow? */
+    height: 100vh;
     background-image: url(res/Header_img_mobile.jpg);
-    /* background-size:cover; */
-    background-size: 100% 100%;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,10 +141,7 @@ a {
     z-index: -1;
 }
 
-/* Top Links */
 .nav_list {
-    /* TODO: Remove display setting when actually working on nav */
-    display: none; 
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -155,72 +176,118 @@ a {
     text-shadow: var(--txtOutline);
 }
 
-.contentBackground {
-    background-color: var(--colorDark);
+/*
+  Transition images to separate portfolio sections in an interesting way.
+  They are less dynamic than I would like, but I would rather this then them braking to weird resolutions 
+*/
+.transition_top,
+.transition_middle_1,
+.transition_middle_2 {
+    width: 100%;
+    height: var(--transitionImgHeight);
+    background-color: none;
+    background-size:contain;
+    background-repeat: repeat-x;
 }
+.transition_top      {background-image: url(res/testTransitionTop2.png);}
+.transition_middle_1 {background-image: url(res/testTransitionMiddle1.png);}
+.transition_middle_2 {background-image: url(res/testTransitionMiddle2.png);}
 
+
+
+
+
+
+
+/* MAIN PORTFOLIO CONTENT CSS START */
 .aboutPage {
+    background-color: var(--colorDark2);
+    color: var(--colorLight2);
     display: table;
     margin: 0 auto;
-    /* background-image: url(res/potential_background_overlay.png);
-    background-color: var(--colorDark); */
 }
-
 /* mobile version of img, probably wants to be changed for higher resolutions */
 .about_img {
     max-width: var(--imgWidth);
     margin: var(--imgMargin);
-    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--colorDark3);
+    border-width: var(--borderWidth);
+    border-radius: var(--borderRoundedCorners);
 }
 
-.clear {
-    clear:both;
-}
 
+.skillsPage {
+    background-color: var(--colorDark3);
+    color: var(--colorLight2);
+}
+.skillsPage a {
+    color: var(--colorLight0);
+}
+.skills_grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skills_languages {
+    margin: var(--imgMargin);
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark2);
+}
 /* Custom image bullets for languages */
-.skills_languageList {
+.skills_languages ul {
     list-style:none;
 }
-.skills_languageList li {
+.skills_languages li {
     padding-left: var(--listPaddingLeft);
     text-indent: calc(var(--listPaddingLeft) * -1);
 }
-.skills_languageList img {
+.skills_languages img {
     display: inline;
     height: 1rem;
     width: 1rem;
 }
+.skills_libraries {
+    margin: var(--imgMargin);
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark2);
+}
+.skills_professional {
+    margin: var(--skillsMargin);
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark2);
+}
 
-
-
-
-.projectsPage_grid {
+.projectsPage {
+    background-color: var(--colorDark2);
+    color: var(--colorLight2)
+}
+.projects_grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, var(--projItemSideWidth));
     grid-template-rows: repeat(auto-fit, var(--projItemSideHeight));
-    background-color: var(--colorLight);
     justify-content: center;
-    /* background-color: var(--colorDark); */
 }
+/* Project items are glorified links */
 .projectItem {
     margin: var(--imgMargin);
     position: relative;
-    border-radius: 20px;
-    background-color: var(--colorSuperDark);
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark3);
 
     /* For click effect */
-    border-style: none;
-    border-color: black;
-    border-width: 6px;
+    border-style: solid;
+    border-color: var(--colorDark3);
+    border-width: var(--borderWidth);
 }
-/* For project description */
+/* For project description in desktop mode */
 .projectItem:hover p {
     opacity: 1;
 }
 /* For click effect */
 .projectItem:active {
-    border-style: solid;
+    border-width: calc(var(--borderWidth) * 2);
 }
 .projectItem img {
     width: 100%;
@@ -234,6 +301,7 @@ a {
     width: 100%;
     text-align: center;
     text-shadow: var(--txtOutline);
+    color: var(--colorLight2);
 }
 /* Project Description */
 .projectItem p {
@@ -242,23 +310,29 @@ a {
     height: 100%;
     opacity: 0;
     transition: 0.5s;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: inherit;
     overflow:hidden;
+    /* background-color is --colorDark3 */
+    background-color: rgba(4, 12, 6, 0.8);
+    color: var(--colorLight2);
+}
+
+.contactPage {
+    display:grid;
+    background-color: var(--colorDark3);
+    color: var(--colorLight2);
+}
+.contact_info {
+    margin: var(--imgMargin);
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark2);
+}
+
+.footer {
+    background-color: var(--colorDark2);
 }
 
 
 
-
-
-
-/* For mobile devices, display proper language */
-.desktopText {
-    display: inline;
-}
-.mobileText {
-    display: none;
-}
 
 
 
@@ -303,7 +377,10 @@ a {
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
-    
+    /*  */
+    .skills_grid {
+        grid-template-columns: none;
+    }
 }
 
 /* If user is using a touch device */
@@ -312,8 +389,8 @@ a {
     .mobileText {display:inline;}
     .desktopText {display:none;}
 
-    /* Change project presentation to include descriptions without hovering */
-    .projectsPage_grid {
+    /* nge project presentation to include descriptions without hovering */
+    .projects_grid {
         grid-template-rows: repeat(auto-fit calc(var(--projItemSideHeight) * 2));
     }
     .projectItem h3 {
