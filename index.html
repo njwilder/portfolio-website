@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="header_nav">
+        <!-- OLD NAV LIST -->
+        <!-- <nav class="header_nav">
             <ul class="nav_list">
                 <li class="nav_listItem"><a class="nav_link" href="#home">Home</a></li>
                 <li class="nav_listItem"><a class="nav_link" href="#about">About</a></li>
@@ -17,14 +18,31 @@
                 <li class="nav_listItem"><a class="nav_link" href="#projects">Projects/Work</a></li>
                 <li class="nav_listItem"><a class="nav_link" href="#contact">Contact Me</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        <!-- Mobile nav -->
+        <label class="hamburger">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#home"    >Home</a></li>
+                    <li><a href="#about"   >About</a></li>
+                    <li><a href="#skills"  >Skills</a></li>
+                    <li><a href="#projects">Projects/Work</a></li>
+                    <li><a href="#contact" >Contact Me</a></li>
+                </ul>
+            </nav>
+        </aside>
 
+        <!-- Strictly a jump location for the sidebar -->
+        <div id="home"></div>
 
-        <div class="headerBackgroundImg" id="home">
-            <div class="pageSpacer">
-                <h1 class="headerText">My name is Noah and I love computers!</h1>
-            </div>
+        <div class="headerBackgroundImg">
+            <h1>My name is Noah and I love computers!</h1>
+            <!-- <img src="res/scrollReminder.png" alt=""> -->
         </div>
+        <!-- <img class="headerScrollReminder" src="res/scrollReminder.png" alt=""> -->
 
         <div class="transition_top"></div>
 
@@ -35,7 +53,7 @@
                 One of my greatest joys in life is solving technical problems. A former librarian 
                 and Datacenter lab technician for the University of New Hampshire's 
                 '<a href="https://www.iol.unh.edu">InterOperability Laboratory</a>', I excel in 
-                a strong teamwork oriented programming/debugging environment. I enjoy digging into 
+                strong teamwork oriented programming/debugging environments. I enjoy digging into 
                 complex issues and collaborating with others (or working solo utilizing the 
                 '<a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber ducky</a>' technique) 
                 to get the job done, and done right&#8482. I have a tendancy to give more weight to 
@@ -64,7 +82,7 @@
             <div class="skills_grid">
 
                 <div class="skills_languages">
-                    <h2>Worked with Languages</h2>
+                    <h2>Languages I Have Used</h2>
                     <ul>
                         <li><img src="res/icon/py.png"     > Python</li>
                         <li><img src="res/icon/cpp.png"    > C and C++</li>
@@ -80,7 +98,7 @@
                 </div>
 
                 <div class="skills_libraries">
-                    <h2>Worked with Libraries and Frameworks</h2>
+                    <h2>Libraries and Frameworks I Have Used</h2>
 
                     <h3>Python</h3>
                     <ul>
@@ -135,7 +153,7 @@
                 <!-- Add video game from scratch project -->
 
                 <a class="projectItem" href="">
-                    <img src="res/breadboard_topdown.jpg" alt="">
+                    <img src="res/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
                     <h3>HACK System Architecture from Scratch</h3>
                     <p>
                         My foray into the hardware side of computing. I wanted to learn more about what makes 
@@ -160,19 +178,19 @@
                     <img src="res/lincoln_derp.jpg" alt="">
                     <h3>Portfolio Website</h3>
                     <p>
-                        This portfolio website to refamiliarize myself with HTML and CSS. I wanted 
-                        to avoid using JavaScript and learn about hosting a website via WIP.
+                        This portfolio website you are currently on! The goal was to refamiliarize with 
+                        HTML and CSS as well as hosting websites via WIP.
                         <span class="mobileText">Tap</span>
                         <span class="desktopText">Click</span> 
                         to learn more!
                     </p>
                 </a>
                 <a class="projectItem" href="projects/project_iol.html">
-                    <img src="res/french.jpg" alt="">
+                    <img src="res/french.jpg" alt="Noah wearing a beret and an ascot celebrating Bastille day while sitting at a desk.">
                     <h3>InterOperability Laboratory</h3>
                     <p>
                         An exploration of some of my efforts, things I learned, and my experiences 
-                        during my 2 years at the IOL while staying faithful to my NDA. 
+                        during my 2 years at the IOL while staying faithful to my coworkers (and NDA naturally). 
                         <span class="mobileText">Tap</span>
                         <span class="desktopText">Click</span> 
                         to learn more!
@@ -184,7 +202,7 @@
         <div class="transition_middle_1"></div>
 
         <div class="contactPage" id="contact">
-            <h1>Contact</h1>
+            <h1>Contact Me</h1>
             <div class="contact_info">
                 <p>
                     Please feel free to reach out to me anytime with inquiries, I am happy 
