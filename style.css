@@ -41,13 +41,11 @@ Palette for reference (dark to light):
     --borderWidth:          10px;
     --borderRoundedCorners: 20px;
 
-    /* Font sizes in rem units */
-    --fsScalar: 1;
-    --fsHeader: 2 * var(--fsScalar);
-    --fsH1:     3 * var(--fsScalar);
-    --fsH2:   2.5 * var(--fsScalar);
-    --fsH3:     2 * var(--fsScalar);
-    --fsBody: 1.5 * var(--fsScalar);
+    --fsHeader: 2rem;
+    --fsH1:     3rem;
+    --fsH2:   2.5rem;
+    --fsH3:     2rem;
+    --fsBody: 1.5rem;
 
     --headerPadding:    5%;
     --textPadding:      5%;
@@ -86,7 +84,7 @@ html {
 
 body {
     font-family: var(--ffMain);
-    font-size: calc(var(--fsBody) * 1rem);
+    font-size: var(--fsBody);
     line-height:1.5;
     background-color: red;
     color: var(--colorLight2);
@@ -97,13 +95,13 @@ h1, h2, h3 {
     line-height: 1.1;
     text-align: center;
 }
-h1 {font-size: calc(var(--fsH1) * 1rem);}
-h2 {font-size: calc(var(--fsH2) * 1rem);}
-h3 {font-size: calc(var(--fsH3) * 1rem);}
+h1 {font-size: var(--fsH1);}
+h2 {font-size: (--fsH2);}
+h3 {font-size: (--fsH3);}
 
 p {
     padding: var(--textPadding);
-    font-size: calc(var(--fsBody) * 1rem);
+    font-size: var(--fsBody);
 }
 
 ul {
@@ -173,7 +171,7 @@ a, a:visited, a:hover, a:active {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: calc(var(--fsHeader) * 1rem);
+    font-size: var(--fsHeader);
 }
 .nav_listItem:hover {
     background-color: blue;
