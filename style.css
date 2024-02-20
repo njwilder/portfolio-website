@@ -41,32 +41,33 @@ Palette for reference (dark to light):
     --borderWidth:          10px;
     --borderRoundedCorners: 20px;
 
-    --fsHeader: 2rem;
-    --fsH1:     3rem;
-    --fsH2:   2.5rem;
-    --fsH3:     2rem;
-    --fsBody: 1.5rem;
+    /* Font sizes in rem units */
+    --fsScalar: 1;
+    --fsHeader: 2 * var(--fsScalar);
+    --fsH1:     3 * var(--fsScalar);
+    --fsH2:   2.5 * var(--fsScalar);
+    --fsH3:     2 * var(--fsScalar);
+    --fsBody: 1.5 * var(--fsScalar);
 
     --headerPadding:    5%;
     --textPadding:      5%;
     --listPaddingLeft: 10%;
     --listPaddingRight: 5%;
 
-    --imgWidth:  90%;
-    --imgHeight: 20%;
-    --imgMargin:  5%;
-
     --hamburgerPadding:   20px;
     --hamburgerBarWidth:  50px;
     --hamburgerBarHeight: 12px;
     --hamburgerBarGap:     6px;
 
-    --scrollImgWidth:  100px;
-    --scrollImgHeight: 57px;
+    --scrollImgWidth:  calc(100px * 1.5);
+    --scrollImgHeight: calc(57px  * 2);
 
     --transitionImgHeight: 100px;
 
-    --skillsMargin: 5%;
+    --aboutImgWidth:  50%;
+    --imgMargin: 25px;
+
+    --skillsSpacing: 5%;
 
     --projItemSideWidth: 385px;
     --projItemSideHeight: var(--projItemSideWidth);
@@ -85,10 +86,10 @@ html {
 
 body {
     font-family: var(--ffMain);
-    font-size: var(--fsBody);
-    line-height:1.6;
+    font-size: calc(var(--fsBody) * 1rem);
+    line-height:1.5;
     background-color: red;
-    color: val(--colorLight2);
+    color: var(--colorLight2);
 }
 
 h1, h2, h3 {
@@ -96,13 +97,13 @@ h1, h2, h3 {
     line-height: 1.1;
     text-align: center;
 }
-h1 {font-size: var(--fsH1);}
-h2 {font-size: var(--fsH2);}
-h3 {font-size: var(--fsH3);}
+h1 {font-size: calc(var(--fsH1) * 1rem);}
+h2 {font-size: calc(var(--fsH2) * 1rem);}
+h3 {font-size: calc(var(--fsH3) * 1rem);}
 
 p {
     padding: var(--textPadding);
-    font-size: var(--fsBody);
+    font-size: calc(var(--fsBody) * 1rem);
 }
 
 ul {
@@ -135,46 +136,18 @@ a, a:visited, a:hover, a:active {
 
 
 
-
 .headerBackgroundImg{
     position: sticky;
     top: 0;
-    width: 100%;
     /* Change from vh to percentage somehow? */
     height: 100vh;
-    background-image: url(res/Header_img_mobile.jpg);
+    background-image: url(res/Header_img.jpg);
     background-size:cover;
-    background-position: center;
+    background-position-x: 60%;
     background-repeat: no-repeat;
 
     z-index: -10;
 }
-.headerBackgroundImg h1 {
-    width: 100%;
-    height: 100%;
-    color: var(--colorLight0);
-    padding: 40% 50% 40% 10%;
-    justify-content: center;
-    animation: fadeIn 2s;
-    text-shadow: var(--txtOutline);
-}
-/* .headerScrollReminder {
-    position: sticky;
-    display: inline;
-    top: 80%;
-    width: var(--scrollImgWidth);
-    max-width: 200px;
-    height: var(--scrollImgHeight);
-    max-height: 200px;
-    margin: 0 calc(100vw / 2 - var(--scrollImgWidth) / 2);
-} */
-/* .headerBackgroundImg img {
-    position: sticky;
-    top: 80%;
-    width: 50%;
-    max-width: 200px;
-    margin: 0 auto;
-} */
 
 
 
@@ -200,7 +173,7 @@ a, a:visited, a:hover, a:active {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: var(--fsHeader);
+    font-size: calc(var(--fsHeader) * 1rem);
 }
 .nav_listItem:hover {
     background-color: blue;
@@ -279,7 +252,8 @@ a, a:visited, a:hover, a:active {
 }
 
 .sidebar ul {
-    padding: var(--listPaddingLeft);
+    padding: var(--skillsSpacing);
+    padding-top: 0;
     list-style: none;
 }
 .sidebar li {
@@ -296,9 +270,29 @@ a, a:visited, a:hover, a:active {
 }
 
 
+/* Header Stuff */
+.headerBackgroundImg h1 {
+    position: absolute;
+    top:30%;
+    width: 100%;
+    color: var(--colorLight0);
+    text-shadow: var(--txtOutline);
+    animation: fadeInHeaderText 2s;
+}
+
+.headerBackgroundImg img {
+    position: absolute;
+    bottom: 0%;
+    height:var(--scrollImgHeight);
+    width: var(--scrollImgWidth);
+    left: calc(100% / 2 - var(--scrollImgWidth) / 2);
+    animation: fadeInScrollReminder 3s;
+}
+
+
 /*
   Transition images to separate portfolio sections in an interesting way.
-  They are less dynamic than I would like, but I would rather this then them braking to weird resolutions 
+  They are less dynamic than I would like, but I would rather this then them braking to weird resolutions
 */
 .transition_top,
 .transition_middle_1,
@@ -314,27 +308,35 @@ a, a:visited, a:hover, a:active {
 .transition_middle_2 {background-image: url(res/testTransitionMiddle2.png);}
 
 
-
-
-
-
-
 /* MAIN PORTFOLIO CONTENT CSS START */
 .aboutPage {
+    width: 100%;
+    padding: var(--skillsSpacing);
     background-color: var(--colorDark2);
     color: var(--colorLight2);
-    display: table;
-    margin: 0 auto;
 }
-/* mobile version of img, probably wants to be changed for higher resolutions */
-.about_img {
-    max-width: var(--imgWidth);
+.aboutPage img {
+    max-width: var(--aboutImgWidth);
     margin: var(--imgMargin);
     border-style: solid;
     border-color: var(--colorDark3);
     border-width: var(--borderWidth);
     border-radius: var(--borderRoundedCorners);
 }
+.aboutPage #headshot {
+    float: left;
+}
+.aboutPage #lincoln_jazzed {
+    float: right;
+}
+
+
+
+
+
+
+
+
 
 
 .skillsPage {
@@ -344,16 +346,28 @@ a, a:visited, a:hover, a:active {
 .skillsPage a {
     color: var(--colorLight0);
 }
-.skills_grid {
+.skills_panels {
     display: grid;
-    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: var(--skillsSpacing);
 }
-.skills_languages {
-    margin: var(--imgMargin);
+.skills_languages,
+.skills_libraries,
+.skills_professional {
     border-radius: var(--borderRoundedCorners);
     background-color: var(--colorDark2);
 }
+.skills_languages, 
+.skills_libraries {
+    margin-right: var(--imgMargin);
+}
+.skills_languages ul,
+.skills_libraries ul,
+.skills_professional ul {
+    padding-bottom: var(--skillsSpacing);
+}
+
 /* Custom image bullets for languages */
 .skills_languages ul {
     list-style:none;
@@ -367,24 +381,15 @@ a, a:visited, a:hover, a:active {
     height: 1rem;
     width: 1rem;
 }
-.skills_libraries {
-    margin: var(--imgMargin);
-    border-radius: var(--borderRoundedCorners);
-    background-color: var(--colorDark2);
-}
-.skills_professional {
-    margin: var(--skillsMargin);
-    border-radius: var(--borderRoundedCorners);
-    background-color: var(--colorDark2);
-}
+
 
 .projectsPage {
     background-color: var(--colorDark2);
     color: var(--colorLight2)
 }
 .projects_grid {
-    width: 100%;
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, var(--projItemSideWidth));
     grid-template-rows: repeat(auto-fit, var(--projItemSideHeight));
     justify-content: center;
@@ -402,9 +407,7 @@ a, a:visited, a:hover, a:active {
     border-width: var(--borderWidth);
 }
 /* For project description in desktop mode */
-.projectItem:hover p {
-    opacity: 1;
-}
+.projectItem:hover p, 
 .projectItem:focus-visible p {
     opacity: 1;
 }
@@ -431,28 +434,52 @@ a, a:visited, a:hover, a:active {
     position: absolute;
     top: 0%;
     height: 100%;
+
     opacity: 0;
     transition: 0.5s;
     overflow:hidden;
-    /* background-color is --colorDark3 */
     background-color: rgba(4, 12, 6, 0.8);
     color: var(--colorLight2);
 }
 
+
+/* Contact Page */
 .contactPage {
-    display:grid;
+    display: block;
+    width: 100%;
+    padding: var(--skillsSpacing);
     background-color: var(--colorDark3);
     color: var(--colorLight2);
 }
 .contact_info {
-    margin: var(--imgMargin);
+    padding: var(--skillsSpacing);
     border-radius: var(--borderRoundedCorners);
     background-color: var(--colorDark2);
 }
+.contact_info img {
+    max-width: var(--aboutImgWidth);
+    margin: var(--imgMargin);
+    border-style: solid;
+    border-color: var(--colorDark3);
+    border-width: var(--borderWidth);
+    border-radius: var(--borderRoundedCorners);
 
+    float: right;
+}
+
+
+/* Footer */
 .footer {
     background-color: var(--colorDark2);
 }
+
+
+
+/* 
+    TODO
+     -have hamburger able to be opened via 'enter' when focused on (only space atm)
+     -Get slide down image working with sticky header background
+*/
 
 
 
@@ -460,51 +487,83 @@ a, a:visited, a:hover, a:active {
 
 
 /* Used for headerText */
-@keyframes fadeIn {
+@keyframes fadeInHeaderText {
     0%   {opacity: 0;}
     20%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeInScrollReminder {
+    0%   {opacity: 0;}
+    70%  {opacity: 0;}
     100% {opacity: 1;}
 }
 
 /* DYNAMIC STYLING SETTINGS */
 /* TODO: DONT FORGET ABOUT LANDSCAPE AND PORTRAIT CHECKS FOR STYLING */
-    /* OLD about img settings that work for larger screen widths */
-    /* .about_img {
-        float: left;
-        max-width: 50%;
-        padding: 2.5%;
-    } */
 
 /* Extra Large Screens */
 @media only screen and (min-width: 1201px) {
 }
 
 /* Larger Screens */
-@media only screen and (max-width: 1200px) {
-
-
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 }
 
 /* Smaller Screens */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 881px) and (max-width: 1024px) {
+}
 
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 880px) {
+    /* Switch to vertical view of skills */
+    .skills_panels {
+        grid-template-columns: none;
+    }
+    .skills_languages, 
+    .skills_libraries, 
+    .skills_professional {
+        margin-bottom: var(--skillsSpacing);
+    }
+    .skills_languages, 
+    .skills_libraries {
+        margin-right: 0;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    :root {
+        --aboutImgWidth: 90%;
+        --imgMargin: 5%;
+    }
+
+    /* Images are always separate from text on mobile */
+    .aboutPage img {
+        float: none;
+    }
+
+    /* Switch to vertical view of skills */
+    .skills_panels {
+        grid-template-columns: none;
+    }
+    .skills_languages, 
+    .skills_libraries, 
+    .skills_professional {
+        margin-bottom: var(--skillsSpacing);
+    }
+    .skills_languages, 
+    .skills_libraries {
+        margin-right: 0;
+    }
+
+    .contact_info img {
+        float: none;
+    }
 }
 
 
 /* ALSO CHECK FOR LANDSCAPE MODE VS. PORTRAIT MODE */
 /* EG. SHIFT PROJECT DESCRIPTIONS TO RIGHT FOR MOBILE */
-
-/* Tablets */
-@media only screen and (max-width: 768px) {
-}
-
-/* Mobile */
-@media only screen and (max-width: 480px) {
-    /*  */
-    .skills_grid {
-        grid-template-columns: none;
-    }
-}
 
 /* If user is using a touch device */
 @media (hover: none) {
@@ -512,7 +571,7 @@ a, a:visited, a:hover, a:active {
     .mobileText {display:inline;}
     .desktopText {display:none;}
 
-    /* nge project presentation to include descriptions without hovering */
+    /* Project descriptions always shown */
     .projects_grid {
         grid-template-rows: repeat(auto-fit calc(var(--projItemSideHeight) * 2));
     }
