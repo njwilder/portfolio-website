@@ -20,18 +20,23 @@
             </ul>
         </nav> -->
         <!-- Mobile nav -->
-        <label role="button" aria-haspopup="menu" aria-expanded="false" class="hamburger">
+        <!-- <label role="button" aria-haspopup="menu" aria-expanded="false" class="hamburger">
             <input type="checkbox">
-        </label>
-        <aside class="sidebar">
+        </label> -->
+        <button class="hamburger" id="hamburger" value="closed" onclick="toggleHamburger('hamburger')">
+            <div class="bar" aria-hidden="true"></div>
+            <div class="bar" aria-hidden="true"></div>
+            <div class="bar" aria-hidden="true"></div>
+        </button>
+        <aside class="sidebar" id="sidebar">
             <h1>Menu</h1>
             <nav>
                 <ul>
-                    <li><a href="#home"    >Home</a></li>
-                    <li><a href="#about"   >About</a></li>
-                    <li><a href="#skills"  >Skills</a></li>
-                    <li><a href="#projects">Projects/Work</a></li>
-                    <li><a href="#contact" >Contact Me</a></li>
+                    <li><a href="#home"     onclick="toggleHamburger('hamburger')">Home</a></li>
+                    <li><a href="#about"    onclick="toggleHamburger('hamburger')">About</a></li>
+                    <li><a href="#skills"   onclick="toggleHamburger('hamburger')">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleHamburger('hamburger')">Projects/Work</a></li>
+                    <li><a href="#contact"  onclick="toggleHamburger('hamburger')">Contact Me</a></li>
                 </ul>
             </nav>
         </aside>
@@ -59,9 +64,12 @@
                 to get the job done, and done right&#8482. I have a tendancy to give more weight to 
                 supportable and correct code over rushing for a solution and calling it good.
             </p>
+
+            <div class="clear" aria-hidden="true"></div>
+
             <img id="lincoln_jazzed" src="res/lincoln_jazzed.jpg" alt="A very happy dog (Lincoln). His eyes are gleaming and his tongue is sticking out.">
             <p>
-                When I am not feverishly coding, I enjoy oil painting with my little German companion Lincoln, 
+                When I am not feverishly coding, I enjoy oil painting with my little German companion, Lincoln, 
                 as well as partaking in as many strange hobbies and side activities as I can get my hands on!
             </p>
             <p>If you want to get to know more about me: 
@@ -70,7 +78,9 @@
                     <span class="mobileText">TAP HERE!</span> 
                 </a>
             </p>
+
             <div class="clear" aria-hidden="true"></div>
+
         </div>
 
         <div class="transition_middle_1"></div>
@@ -102,23 +112,40 @@
 
                     <h3>Python</h3>
                     <ul>
-                        <li><a href="https://docs.python.org/3/library/tkinter.html">'tkinter'</a>: GUI Creation and Interfacing (used for IOL GUI refactor project)</li>
+                        <li>
+                            <a href="https://docs.python.org/3/library/tkinter.html">'tkinter'</a>: GUI 
+                            Creation and Interfacing (used for IOL GUI refactor project)
+                        </li>
                     </ul>
 
                     <h3>C++</h3>
                     <ul>
-                        <li><a href="https://www.libsdl.org/">'SDL'</a>: Cross-platform low level access to system hardware (used for texture rendering)</li>
-                        <li><a href="https://www.openal.org/">'OpenAL'</a>: Cross-platform audio API (used for playing raw PCM data within application)</li>
+                        <li>
+                            <a href="https://www.libsdl.org/">'SDL'</a>: Cross-platform low level access 
+                            to system hardware (used for texture rendering)
+                        </li>
+                        <li>
+                            <a href="https://www.openal.org/">'OpenAL'</a>: Cross-platform audio API 
+                            (used for playing raw PCM data within application)
+                        </li>
                     </ul>
 
                     <h3>C, Python, and CLI</h3>
                     <ul>
-                        <li><a href="https://github.com/linux-nvme/nvme-cli">'nvme-cli'</a>: NVMe device interfacing (used extensively at the IOL via Python wrapper or directly via terminal for troubleshooting and testing NVMe devices)</li>
+                        <li>
+                            <a href="https://github.com/linux-nvme/nvme-cli">'nvme-cli'</a>: NVMe device 
+                            interfacing (used extensively at the IOL via Python wrapper or directly via 
+                            terminal for troubleshooting and testing NVMe devices. Considerable time spent 
+                            studying the C source code for this library also)
+                        </li>
                     </ul>
 
                     <h3>JavaScript</h3>
                     <ul>
-                        <li><a href="https://react.dev/">'React'</a>: Web UI and site responsiveness (academic use)</li>
+                        <li>
+                            <a href="https://react.dev/">'React'</a>: Web UI and site responsiveness 
+                            (academic use)
+                        </li>
                     </ul>
                 </div>
 
@@ -148,49 +175,55 @@
 
         <div class="projectsPage" id="projects">
             <h1>Personal Projects and Work</h1>
-            <div class="projects_grid">
+            <button value="disabled" onclick="toggleDescriptions(this)">Toggle Descriptions</button>
 
+            <div class="projects_grid">
                 <!-- Add video game from scratch project -->
 
-                <a class="projectItem" href="">
+                <a class="projectItem" id="proj_hackArchitecture" href="index.html">
                     <h3>HACK System Architecture from Scratch</h3>
-                    <img src="res/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
+                    <img id="imgTest" src="res/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
                     <p>
                         My foray into the hardware side of computing. I wanted to learn more about what makes 
                         computers compute more intimately.
+                        <br>
                         <span class="mobileText">Tap</span>
                         <span class="desktopText">Click</span> 
                         to learn more!
                     </p>
                 </a>
-                <a class="projectItem" href="">
-                    <h3>Team Fortress 2 Random Loadout Generator</h3>
+
+                <a class="projectItem" id="proj_tf2Randomizer" href="index.html">
+                    <h3>'Team Fortress 2' Random Loadout Generator</h3>
                     <img src="res/lincoln_jazzed.jpg" alt="">
                     <p>
                         A website I made to practice HTML, CSS, and JavaScript. Random loadout 
                         generator for the videogame 'Team Fortress 2'. 
+                        <br>
                         <span class="mobileText">Tap</span>
                         <span class="desktopText">Click</span> 
                         to learn more!
                     </p>
                 </a>
-                <a class="projectItem" href="index.html">
+                <a class="projectItem" id="proj_portfolio" href="index.html">
                     <h3>Portfolio Website</h3>
                     <img src="res/lincoln_derp.jpg" alt="">
                     <p>
                         This portfolio website you are currently on! The goal was to refamiliarize with 
                         HTML and CSS as well as hosting websites via WIP.
+                        <br>
                         <span class="mobileText">Tap</span>
                         <span class="desktopText">Click</span> 
                         to learn more!
                     </p>
                 </a>
-                <a class="projectItem" href="projects/project_iol.html">
+                <a class="projectItem" id="proj_iol" href="projects/project_iol.html">
                     <h3>InterOperability Laboratory</h3>
                     <img src="res/french.jpg" alt="Noah wearing a beret and an ascot celebrating Bastille day while sitting at a desk.">
                     <p>
                         An exploration of some of my efforts, things I learned, and my experiences 
                         during my 2 years at the IOL.  
+                        <br>
                         <span class="mobileText">Tap</span>
                         <span class="desktopText">Click</span> 
                         to learn more!
@@ -226,4 +259,7 @@
         </div>
 
     </body>
+
+    <script src="app.js"></script>
+
 </html>
