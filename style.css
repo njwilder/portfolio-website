@@ -87,8 +87,9 @@ Palette for reference (dark to light):
     --imgMargin: 5%;
 
     --genericSpacing: 5%;
+    --genericSpacingFixed: 20px;
 
-    --projItemSideWidth: 350px;
+    --projItemSideWidth: 300px;
     --projItemSideHeight: var(--projItemSideWidth);
     --projItemGap: 20px;
 
@@ -160,16 +161,7 @@ a, a:visited, a:hover, a:active {
 }
 
 
-.headerBackgroundImg{
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    background-image: url(res/Header_img.jpg);
-    background-size:cover;
-    background-position-x: 60%;
-    background-repeat: no-repeat;
-    z-index: var(--backgroundZLevel);
-}
+
 
 
 /* OLD NAV LIST */
@@ -280,6 +272,16 @@ a, a:visited, a:hover, a:active {
 
 
 /* Header Stuff */
+.headerBackgroundImg {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url(res/Header_img.jpg);
+    background-size:cover;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+    z-index: var(--backgroundZLevel);
+}
 .headerBackgroundImg h1 {
     position: absolute;
     top:30%;
@@ -388,7 +390,7 @@ a, a:visited, a:hover, a:active {
 /* Toggle Descriptions button */
 .projectsPage button {
     border-style: solid;
-    padding: var(--genericSpacing);
+    padding: var(--genericSpacingFixed);
     margin: var(--genericSpacing);
     background-color: var(--colorDark0);
     color: var(--colorLight2);
@@ -402,8 +404,8 @@ a, a:visited, a:hover, a:active {
     border-width: var(--borderWidth);
 }
 .projectsPage button:active {
-    border-width: calc(var(--borderWidth) * 2);
-    margin-bottom: calc(var(--borderWidth));
+    border-width: calc(var(--borderWidth) + 3px);
+    margin-bottom: calc(var(--genericSpacing) - 6px);
 }
 .projects_grid {
     display: flex;
@@ -454,6 +456,7 @@ a, a:visited, a:hover, a:active {
     top: 0;
     height: 100%;
     width: 100%;
+    padding: var(--genericSpacing);
     font-size: var(--fsprojectItemBody);
     text-align: center;
 
@@ -528,7 +531,6 @@ a, a:visited, a:hover, a:active {
 
 /* 
     - Add feedback for hovering over project items with descriptions toggled
-    - Project headers with toggled descriptions not working as expected
 */
 
 
@@ -551,6 +553,13 @@ a, a:visited, a:hover, a:active {
     /* When using the navbar to scroll so navbar doesn't cover headers */
     html {
         scroll-padding-top: calc(var(--navbarPadding) * 2 + var(--fsH1));
+    }
+    /* Push background image down and slide img up to avoid cut-off */
+    .headerBackgroundImg {
+        top: calc(var(--navbarPadding) + var(--fsHeader));
+    }
+    .headerBackgroundImg img {
+        bottom: calc(var(--navbarPadding) + var(--fsHeader));
     }
 }
 
