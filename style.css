@@ -1,0 +1,600 @@
+/* 
+This site uses the lovely Ammo-8 Palette I found from https://lospec.com/palette-list/ammo-8 
+created by https://twitter.com/rsvpasap1
+
+Palette for reference (dark to light):
+#040c06
+#112318
+#1e3a29
+#305d42
+#4d8061
+#89a257
+#bedc7f
+#eeffcc
+*/
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Custom CSS Variables */
+:root {
+    /* Ammo-8 Color Palette */
+    --colorDark3:  #040c06;
+    --colorDark2:  #112318;
+    --colorDark1:  #1e3a29;
+    --colorDark0:  #305d42;
+    --colorLight0: #4d8061;
+    --colorLight1: #89a257;
+    --colorLight2: #bedc7f;
+    --colorLight3: #eeffcc;
+
+    /* default font stuff */
+    --ffMain: "Arial", sans-serif;
+    --ffMono: "Courier New", monospace;
+
+    --fwReg: 300;
+    --fwBold: 900;
+
+    --borderWidth:          10px;
+    --borderRoundedCorners: 20px;
+
+    /* Font sizes are initially selected for mobile, then scaled via fsScalar */
+    --fsScalar:  1;
+    --fsHeader:            calc(2.00 * var(--fsScalar) * 1rem);
+    --fsH1:                calc(2.00 * var(--fsScalar) * 1rem);
+    --fsH2:                calc(1.75 * var(--fsScalar) * 1rem);
+    --fsH3:                calc(1.50 * var(--fsScalar) * 1rem);
+    --fsBody:              calc(1.00 * var(--fsScalar) * 1rem);
+    --fsSidebar:           calc(1.50 * var(--fsScalar) * 1rem);
+    --fsProjectItemHeader: calc(2.00 * var(--fsScalar) * 1rem);
+    --fsProjectItemBody:   calc(1.25 * var(--fsScalar) * 1rem);
+    /* --fsH1:                2.00rem;
+    --fsH2:                1.75rem;
+    --fsH3:                1.50rem;
+    --fsBody:              1.00rem;
+    --fsSidebar:           1.50rem;
+    --fsProjectItemHeader: 2.00rem;
+    --fsprojectItemBody:   1.25rem; */
+
+    --textWidth: 90%;
+
+    --headerPadding: 2.5%;
+    --listPaddingLeft: 10%;
+    --listPaddingRight: 5%;
+
+    --navbarPadding: 15px;
+
+    --hamburgerPadding:   20px;
+    --hamburgerBarHeight: 12px;
+    --hamburgerBarWidth:  50px;
+    --hamburgerBarGap:     6px;
+
+    --sidebarTopMargin: calc(var(--hamburgerBarHeight) * 3 + var(--hamburgerPadding) * 3);
+    --sidebarMaxHeight: calc(100vh - var(--sidebarTopMargin));
+    --sidebarWidth:       90%;
+    --sidebarHeight:     400px;
+
+
+    --scrollImgWidth:  calc(100px * 1.5);
+    --scrollImgHeight: calc(57px  * 2);
+
+    --transitionImgHeight: 100px;
+
+    --aboutImgWidth: 90%;
+    --imgMargin: 5%;
+
+    --genericSpacing: 5%;
+    --genericSpacingFixed: 20px;
+
+    --projItemSideWidth: 300px;
+    --projItemSideHeight: var(--projItemSideWidth);
+    --projItemGap: 20px;
+
+    /* Text shadow border hack for text outline */
+    --txtOutline: 3px  3px 2px var(--colorDark3),
+                 -3px  3px 2px var(--colorDark3),
+                 -3px -3px 0   var(--colorDark3),
+                  3px -3px 0   var(--colorDark3);
+
+
+    --navZLevel: 10;
+    --backgroundZLevel: -10;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ffMain);
+    font-size: var(--fsBody);
+    line-height:1.5;
+    background-color: red;
+    color: var(--colorLight2);
+}
+
+h1, h2, h3 {
+    padding: var(--headerPadding);
+    line-height: 1.1;
+    text-align: center;
+}
+h1 {font-size: var(--fsH1);}
+h2 {font-size: var(--fsH2);}
+h3 {font-size: var(--fsH3);}
+
+p {
+    width: var(--textWidth);
+    margin: 0 auto;
+    font-size: var(--fsBody);
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0 var(--listPaddingRight) 0 var(--listPaddingLeft);
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: var(--colorLight0);
+}
+
+/* For mobile devices, display proper language */
+.desktopText {
+    display: none;
+}
+.mobileText {
+    display: inline;
+}
+
+/* Used for clearing floats in the page */
+.clear {
+    clear:both;
+}
+
+
+
+
+
+/* OLD NAV LIST */
+.header_nav {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--colorLight1);
+    z-index: var(--navZLevel);
+    text-align: center;
+}
+.header_nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flexbox;
+    flex-direction: row;
+}
+.header_nav li {
+    display: inline-block;
+    width: fit-content;
+}
+.header_nav a {
+    padding: var(--navbarPadding);
+    display: block;
+    font-weight: var(--fwBold);
+    color: var(--colorDark1);
+}
+.header_nav li:hover {
+    background-color: var(--colorDark1);
+}
+.header_nav li:hover a {
+    color: var(--colorLight2);
+}
+
+.hamburger {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburgerBarGap);
+    z-index: var(--navZLevel);
+    padding: var(--hamburgerPadding);
+    cursor: pointer;
+    /* --colorDark3 */
+    background-color: rgba(4, 12, 6, 0.5);
+    border-style: none;
+    border-radius: var(--borderRoundedCorners);
+}
+.hamburger .bar {
+    width: var(--hamburgerBarWidth);
+    height: var(--hamburgerBarHeight);
+
+    background-color: var(--colorLight1);
+    border-color: var(--colorDark1);
+
+    border-style: solid;
+    border-width: var(1px);
+    border-radius: var(--borderRoundedCorners);
+}
+.sidebar {
+    width: var(--sidebarWidth);
+    max-height: var(--sidebarMaxHeight);
+    margin: var(--sidebarTopMargin) var(--genericSpacing);
+
+    z-index: var(--navZLevel);
+    position: fixed;
+
+    background-color: var(--colorLight1);
+    color: var(--colorDark1);
+    text-align: center;
+    border-radius: var(--borderRoundedCorners);
+
+    transition: translate 0.3s;
+    translate: 200%;
+}
+.sidebar ul {
+    height: calc(var(--sidebarHeight) - (var(--headerPadding) * 2 + var(--fsH1) + var(--genericSpacing)));
+    margin: 0 var(--genericSpacing) var(--genericSpacing);
+
+    list-style: none;
+    font-size: var(--fsSidebar);
+    font-weight: var(--fwBold);
+}
+.sidebar li {
+    margin-top: var(--genericSpacing);
+    text-decoration: none;
+
+    background-color: var(--colorDark2);
+    border-radius: var(--borderRoundedCorners);
+}
+.sidebar a {
+    padding: var(--genericSpacing);
+    display: block;
+    border-radius: var(--borderRoundedCorners);
+    color: var(--colorLight3);
+    visibility: hidden;
+}
+
+
+/* Header Stuff */
+.headerBackgroundImg {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url(res/Header_img.jpg);
+    background-size:cover;
+    background-position-x: 60%;
+    background-repeat: no-repeat;
+    z-index: var(--backgroundZLevel);
+}
+.headerBackgroundImg h1 {
+    position: absolute;
+    top:30%;
+    width: 100%;
+    color: var(--colorLight0);
+    text-shadow: var(--txtOutline);
+    animation: fadeInHeaderText 2s;
+}
+
+.headerBackgroundImg img {
+    position: absolute;
+    bottom: 0%;
+    height:var(--scrollImgHeight);
+    width: var(--scrollImgWidth);
+    left: calc(100% / 2 - var(--scrollImgWidth) / 2);
+    animation: fadeInScrollReminder 3s;
+}
+
+
+/*
+  Transition images to separate portfolio sections in an interesting way.
+  They are less dynamic than I would like, but I would rather this then them braking to weird resolutions
+*/
+.transition_top,
+.transition_middle_1,
+.transition_middle_2 {
+    width: 100%;
+    height: var(--transitionImgHeight);
+    background-color: none;
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+.transition_top      {background-image: url(res/testTransitionTop2.png);}
+.transition_middle_1 {background-image: url(res/testTransitionMiddle1.png);}
+.transition_middle_2 {background-image: url(res/testTransitionMiddle2.png);}
+
+
+/* MAIN PORTFOLIO CONTENT CSS START */
+.aboutPage {
+    width: 100%;
+    background-color: var(--colorDark2);
+    color: var(--colorLight2);
+}
+.aboutPage img {
+    float: none;
+
+    max-width: var(--aboutImgWidth);
+    margin: var(--imgMargin);
+
+    border-style: solid;
+    border-width: var(--borderWidth);
+    border-radius: var(--borderRoundedCorners);
+    border-color: var(--colorDark3);
+}
+.aboutPage p {
+    padding: var(--genericSpacing);
+}
+
+
+.skillsPage {
+    background-color: var(--colorDark3);
+    color: var(--colorLight2);
+}
+.skillsPage a {
+    color: var(--colorLight0);
+}
+.skills_panels {
+    display: grid;
+    grid-template-columns: none;
+    width: 100%;
+}
+.skills_languages,
+.skills_libraries,
+.skills_professional {
+    margin: var(--genericSpacing);
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark2);
+}
+
+.skills_languages ul,
+.skills_libraries ul,
+.skills_professional ul {
+    padding-bottom: var(--genericSpacing);
+}
+
+/* Custom image bullets for languages */
+.skills_languages ul {
+    list-style:none;
+}
+.skills_languages li {
+    padding-left: var(--listPaddingLeft);
+    text-indent: calc(var(--listPaddingLeft) * -1);
+}
+.skills_languages img {
+    display: inline;
+    height: 1rem;
+    width: 1rem;
+}
+
+
+.projectsPage {
+    background-color: var(--colorDark2);
+    color: var(--colorLight2);
+    text-align: center;
+}
+/* Toggle Descriptions button */
+.projectsPage button {
+    border-style: solid;
+    padding: var(--genericSpacingFixed);
+    margin: var(--genericSpacing);
+    background-color: var(--colorDark0);
+    color: var(--colorLight2);
+    font-size: var(--fsH3);
+    font-weight: var(--fwBold);
+    border-radius: var(--borderRoundedCorners);
+    cursor: pointer;
+    /* For click effect */
+    border-style: solid;
+    border-color: var(--colorDark3);
+    border-width: var(--borderWidth);
+}
+.projectsPage button:active {
+    border-width: calc(var(--borderWidth) + 3px);
+    margin-bottom: calc(var(--genericSpacing) - 6px);
+}
+.projects_grid {
+    display: flex;
+    flex-wrap:wrap;
+    gap: var(--projItemGap);
+    justify-content: center;
+    width: 100%;
+}
+/* Project items are glorified links */
+.projectItem {
+    position: relative;
+    top: 0;
+    width: var(--projItemSideWidth);
+    max-width: 100%;
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark3);
+
+    /* For click effect */
+    border-style: solid;
+    border-color: var(--colorDark3);
+    border-width: var(--borderWidth);
+}
+/* For project description in desktop mode */
+.projectItem:hover p, 
+.projectItem:focus-visible p {
+    opacity: 1;
+}
+/* For click effect */
+.projectItem:active {
+    border-width: calc(var(--borderWidth) * 2);
+}
+.projectItem img {
+    object-fit: cover;
+    border-radius: inherit;
+}
+/* Project Name */
+.projectItem h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: var(--fsProjectItemHeader);
+    text-shadow: var(--txtOutline);
+    color: var(--colorLight2);
+}
+/* Project Description */
+.projectItem p {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: var(--genericSpacing);
+    font-size: var(--fsprojectItemBody);
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgba(4, 12, 6, 0.8);
+    color: var(--colorLight2);
+
+    /* not ideal, but don't want to do bizarre things to support sub-200px wide screens */
+    overflow-y: scroll;
+}
+
+
+/* Contact Page */
+.contactPage {
+    width: 100%;
+    background-color: var(--colorDark3);
+    color: var(--colorLight2);
+}
+.contact_info {
+    width: 100%;
+    /* Idk why, but this needs to be something inline to work with image margins and I've 
+    spent a little too long researching why with no results*/
+    display: inline-block;
+    border-radius: var(--borderRoundedCorners);
+    background-color: var(--colorDark2);
+}
+.contact_info img {
+    float: none;
+
+    max-width: var(--aboutImgWidth);
+    margin: var(--imgMargin);
+
+    border-style: solid;
+    border-width: var(--borderWidth);
+    border-radius: var(--borderRoundedCorners);
+    border-color: var(--colorDark3);
+}
+.contact_info p {
+    padding: var(--genericSpacing);
+}
+.contact_info ul {
+    margin: 0 var(--genericSpacing) var(--genericSpacing);
+    list-style: none;
+    text-align: center;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--colorDark2);
+}
+
+
+
+
+
+/* Used for headerText */
+@keyframes fadeInHeaderText {
+    0%   {opacity: 0;}
+    20%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeInScrollReminder {
+    0%   {opacity: 0;}
+    70%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* DYNAMIC STYLING SETTINGS */
+/* TODO: DONT FORGET ABOUT LANDSCAPE AND PORTRAIT CHECKS FOR STYLING */
+
+/* 
+    - Add feedback for hovering over project items with descriptions toggled
+*/
+
+
+/* If user is not using a touch device */
+@media not (hover: none) {
+    /* Change mobile specific text to desktop text */
+    .mobileText  {display: none;}
+    .desktopText {display: inline;}
+}
+
+/* Non-touch devices should use the hamburger unless their width is above 500px */
+@media only screen and (min-width: 500px) and (not (hover: none)) {
+    /* Swap hamburger in favor of a navbar */
+    .hamburger {
+        visibility: hidden;
+    }
+    .header_nav {
+        visibility: visible;
+    }
+    /* When using the navbar to scroll so navbar doesn't cover headers */
+    html {
+        scroll-padding-top: calc(var(--navbarPadding) * 2 + var(--fsH1));
+    }
+    /* Push background image down and slide img up to avoid cut-off */
+    .headerBackgroundImg {
+        top: calc(var(--navbarPadding) + var(--fsHeader));
+    }
+    .headerBackgroundImg img {
+        bottom: calc(var(--navbarPadding) + var(--fsHeader));
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    :root {
+        --aboutImgWidth: 40%;
+        --imgMargin: 25px;
+    }
+    .aboutPage #headshot {
+        float: left;
+    }
+    .aboutPage #lincoln_jazzed {
+        float: right;
+    }
+    .contactPage img {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    :root {
+        --fsScalar: 1.25;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .skills_panels {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
+/* ALSO CHECK FOR LANDSCAPE MODE VS. PORTRAIT MODE */
+/* EG. SHIFT PROJECT DESCRIPTIONS TO RIGHT FOR MOBILE */
+
+
+

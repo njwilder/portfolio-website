@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah Wilder - Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="header_nav">
+            <ul>
+                <li><a href="#home"    >Home</a></li>
+                <li><a href="#about"   >About</a></li>
+                <li><a href="#skills"  >Skills</a></li>
+                <li><a href="#projects">Projects/Work</a></li>
+                <li><a href="#contact" >Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" id="hamburger" value="closed" onclick="toggleHamburger()">
+            <div class="bar" aria-hidden="true"></div>
+            <div class="bar" aria-hidden="true"></div>
+            <div class="bar" aria-hidden="true"></div>
+        </button>
+        <aside class="sidebar" id="sidebar">
+            <h1>Menu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home"     onclick="toggleHamburger()">Home</a></li>
+                    <li><a href="#about"    onclick="toggleHamburger()">About</a></li>
+                    <li><a href="#skills"   onclick="toggleHamburger()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleHamburger()">Projects/Work</a></li>
+                    <li><a href="#contact"  onclick="toggleHamburger()">Contact Me</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Strictly a jump location for the sidebar -->
+        <div id="home"></div>
+
+        <div class="headerBackgroundImg">
+            <h1>My name's Noah,<br> and I love computers!</h1>
+            <img src="res/scrollReminder.png" alt="Icon to indicate scrollability of webpage." aria-hidden="true">
+        </div>
+
+        <div class="transition_top" aria-hidden="true"></div>
+
+        <div class="aboutPage" id="about">
+            <h1>About Me</h1>
+            <img id="headshot" src="res/headshot_glasses.jpg" alt="A headshot of Noah smiling with glasses on.">
+            <p>
+                One of my greatest joys in life is solving technical problems. A former librarian 
+                and Datacenter lab technician for the University of New Hampshire's 
+                '<a href="https://www.iol.unh.edu">InterOperability Laboratory</a>', I excel in 
+                strong teamwork oriented programming/debugging environments. I enjoy digging into 
+                complex issues and collaborating with others (or working solo utilizing the 
+                '<a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber ducky</a>' technique) 
+                to get the job done, and done right&#8482. I have a tendancy to give more weight to 
+                supportable and correct code over rushing for a solution and calling it good.
+            </p>
+
+            <div class="clear" aria-hidden="true"></div>
+
+            <img id="lincoln_jazzed" src="res/lincoln_jazzed.jpg" alt="A very happy dog (Lincoln). His eyes are gleaming and his tongue is sticking out.">
+            <p>
+                When I am not feverishly coding, I enjoy oil painting with my little German companion, Lincoln, 
+                as well as partaking in as many strange hobbies and side activities as I can get my hands on!
+            </p>
+            <p>If you want to get to know more about me: 
+                <a href="about_detailed.html">
+                    <span class="desktopText">CLICK HERE!</span>
+                    <span class="mobileText">TAP HERE!</span> 
+                </a>
+            </p>
+
+            <div class="clear" aria-hidden="true"></div>
+
+        </div>
+
+        <div class="transition_middle_1"></div>
+
+        <!-- Todo: Have these sections split into separate columns if resolution is wide enough -->
+        <div class="skillsPage" id="skills">
+            <h1>Skills and Experience</h1>
+
+            <div class="skills_panels">
+
+                <div class="skills_languages">
+                    <h2>Languages I Have Used</h2>
+                    <ul>
+                        <li><img src="res/icon/py.png"      aria-hidden="true"> Python</li>
+                        <li><img src="res/icon/cpp.png"     aria-hidden="true"> C and C++</li>
+                        <li><img src="res/icon/HTML5.png"   aria-hidden="true"> HTML, CSS, and JavaScript</li>
+                        <li><img src="res/icon/mysql.png"   aria-hidden="true"> SQL and MySQL</li>
+                        <li><img src="res/icon/java.png"    aria-hidden="true"> Java</li>
+                        <li><img src="res/icon/scala.png"   aria-hidden="true"> Scala</li>
+                        <li><img src="res/icon/clisp.png"   aria-hidden="true"> CLISP</li>
+                        <li><img src="res/icon/asm.png"     aria-hidden="true"> x86_64 ASM</li>
+                        <li><img src="res/icon/HACK.png"    aria-hidden="true"> HACK ASM and Bytecode</li>
+                        <li><img src="res/icon/arnoldc.png" aria-hidden="true"> More than my fair share of <a href="https://lhartikk.github.io/ArnoldC/">ArnoldC</a></li>
+                    </ul>
+                </div>
+
+                <div class="skills_libraries">
+                    <h2>Libraries and Frameworks I Have Used</h2>
+
+                    <h3>Python</h3>
+                    <ul>
+                        <li>
+                            <a href="https://docs.python.org/3/library/tkinter.html">'tkinter'</a>: GUI 
+                            Creation and Interfacing (used for IOL GUI refactor project)
+                        </li>
+                    </ul>
+
+                    <h3>C++</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.libsdl.org/">'SDL'</a>: Cross-platform low level access 
+                            to system hardware (used for texture rendering)
+                        </li>
+                        <li>
+                            <a href="https://www.openal.org/">'OpenAL'</a>: Cross-platform audio API 
+                            (used for playing raw PCM data within application)
+                        </li>
+                    </ul>
+
+                    <h3>C, Python, and CLI</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/linux-nvme/nvme-cli">'nvme-cli'</a>: NVMe device 
+                            interfacing (used extensively at the IOL via Python wrapper or directly via 
+                            terminal for troubleshooting and testing NVMe devices. Considerable time spent 
+                            studying the C source code for this library also)
+                        </li>
+                    </ul>
+
+                    <h3>JavaScript</h3>
+                    <ul>
+                        <li>
+                            <a href="https://react.dev/">'React'</a>: Web UI and site responsiveness 
+                            (academic use)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills_professional">
+                    <h2>Acquired Professional Skills</h2>
+                    <ul>
+                        <li>Analyzing technical specifications and documents</li>
+                        <li>Participating and leading code reviews and scrums</li>
+                        <li>Participating and leading team management meetings</li>
+                        <li>Large scale software engineering of product</li>
+                        <li>Product refactoring</li>
+                        <li>Legacy code maintenance and refactoring</li>
+                        <li>New hire training</li>
+                        <li>General Employee and Intern management</li>
+                        <li>Development team lead</li>
+                        <li>Customer support</li>
+                        <li>System hardware and software troubleshooting</li>
+                        <li>Network troubleshooting</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="transition_middle_2" aria-hidden="true"></div>
+
+        <div class="projectsPage" id="projects">
+            <h1>Personal Projects and Work</h1>
+            <button id="projectDescriptionButton" value="disabled" onclick="toggleDescriptions()">Toggle Descriptions</button>
+
+            <div class="projects_grid">
+                <!-- Add video game from scratch project -->
+
+                <a class="projectItem" id="proj_hackArchitecture" href="index.html">
+                    <h3>HACK System Architecture</h3>
+                    <img id="imgTest" src="res/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
+                    <p>
+                        My foray into the hardware side of computing. I wanted to learn more about what makes 
+                        computers compute more intimately.
+                        <br>
+                        <span class="mobileText">Tap</span>
+                        <span class="desktopText">Click</span> 
+                        to learn more!
+                    </p>
+                </a>
+
+                <a class="projectItem" id="proj_tf2Randomizer" href="index.html">
+                    <h3>'TF2' Loadout Generator</h3>
+                    <img src="res/lincoln_jazzed.jpg" alt="">
+                    <p>
+                        A website I made to practice HTML, CSS, and JavaScript. Random loadout 
+                        generator for the videogame 'Team Fortress 2'. 
+                        <br>
+                        <span class="mobileText">Tap</span>
+                        <span class="desktopText">Click</span> 
+                        to learn more!
+                    </p>
+                </a>
+                <a class="projectItem" id="proj_portfolio" href="index.html">
+                    <h3>Portfolio Website</h3>
+                    <img src="res/lincoln_derp.jpg" alt="">
+                    <p>
+                        This portfolio website you are currently on! The goal was to refamiliarize with 
+                        HTML, CSS, and JavaScript as well as trying website hosting via 'Github Pages'. 
+                        Also a custom domain name thanks to as well as getting 'Spaceship'.
+                        <br>
+                        <span class="mobileText">Tap</span>
+                        <span class="desktopText">Click</span> 
+                        to learn more!
+                    </p>
+                </a>
+                <a class="projectItem" id="proj_iol" href="projects/project_iol.html">
+                    <h3>The IOL</h3>
+                    <img src="res/french.jpg" alt="Noah wearing a beret and an ascot celebrating Bastille day while sitting at a desk.">
+                    <p>
+                        An exploration of some of my efforts, things I learned, and my experiences 
+                        during my 2 years at the IOL. 
+                        <br>
+                        <span class="mobileText">Tap</span>
+                        <span class="desktopText">Click</span> 
+                        to learn more!
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="transition_middle_1" aria-hidden="true"></div>
+
+        <div class="contactPage" id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact_info">
+                <img src="res/headshot_crazed.jpg" alt="">
+                <p>
+                    Please feel free to reach out to me anytime with inquiries, I am happy 
+                    to do commission work, details of which can be nailed down over email.
+                    <br>
+                    <br>
+                    ...and thank you for spending the time reading about me!
+                </p>
+                
+                <div class="clear" aria-hidden="true"></div>
+
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>Email: njwilder506@gmail.com</li>
+                    <li><a href="https://drive.google.com/file/d/1Mmbkk-rxpoCyG_BOURfvV5lFJB5aDD6F/view?usp=sharing">R&eacutesum&eacute</a></li>
+                    <li><a href="https://www.linkedin.com/in/noah-wilder-9005662b3/">Linkedin</a></li>
+                    <li><a href="https://github.com/njwilder">Github</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="transition_middle_2" aria-hidden="true"></div>
+
+        <div class="footer">
+            <a href="attribution.html">Attribution</a>
+        </div>
+
+    </body>
+
+    <script src="app.js"></script>
+
+</html>
