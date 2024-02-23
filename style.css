@@ -186,18 +186,16 @@ a, a:visited, a:hover, a:active {
 .header_nav li {
     display: inline-block;
     width: fit-content;
-    padding: var(--navbarPadding);
 }
 .header_nav a {
+    padding: var(--navbarPadding);
+    display: block;
     font-weight: var(--fwBold);
     color: var(--colorDark1);
 }
 .header_nav li:hover {
     background-color: var(--colorDark1);
 }
-/* .header_nav li:has(:hover) + .header_nav a{
-    color: var(--colorLight2);
-} */
 .header_nav li:hover a {
     color: var(--colorLight2);
 }
@@ -248,8 +246,6 @@ a, a:visited, a:hover, a:active {
 .sidebar ul {
     height: calc(var(--sidebarHeight) - (var(--headerPadding) * 2 + var(--fsH1) + var(--genericSpacing)));
     margin: 0 var(--genericSpacing) var(--genericSpacing);
-    /* Not ideal */
-    /* overflow: scroll; */
 
     list-style: none;
     font-size: var(--fsSidebar);
