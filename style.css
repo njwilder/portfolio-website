@@ -51,13 +51,6 @@ Palette for reference (dark to light):
     --fsSidebar:           calc(1.50 * var(--fsScalar) * 1rem);
     --fsProjectItemHeader: calc(2.00 * var(--fsScalar) * 1rem);
     --fsProjectItemBody:   calc(1.25 * var(--fsScalar) * 1rem);
-    /* --fsH1:                2.00rem;
-    --fsH2:                1.75rem;
-    --fsH3:                1.50rem;
-    --fsBody:              1.00rem;
-    --fsSidebar:           1.50rem;
-    --fsProjectItemHeader: 2.00rem;
-    --fsprojectItemBody:   1.25rem; */
 
     --textWidth: 90%;
 
@@ -104,7 +97,6 @@ Palette for reference (dark to light):
     --backgroundZLevel: -10;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -113,7 +105,7 @@ body {
     font-family: var(--ffMain);
     font-size: var(--fsBody);
     line-height:1.5;
-    background-color: red;
+    background-color: var(--colorDark2);
     color: var(--colorLight2);
 }
 
@@ -147,6 +139,7 @@ a, a:visited, a:hover, a:active {
     color: var(--colorLight0);
 }
 
+
 /* For mobile devices, display proper language */
 .desktopText {
     display: none;
@@ -161,10 +154,6 @@ a, a:visited, a:hover, a:active {
 }
 
 
-
-
-
-/* OLD NAV LIST */
 .header_nav {
     visibility: hidden;
     position: fixed;
@@ -277,6 +266,7 @@ a, a:visited, a:hover, a:active {
     background-position-x: 60%;
     background-repeat: no-repeat;
     z-index: var(--backgroundZLevel);
+    animation: fadeInHeaderText 1s;
 }
 .headerBackgroundImg h1 {
     position: absolute;
@@ -503,7 +493,56 @@ a, a:visited, a:hover, a:active {
 
 /* Footer */
 .footer {
+    padding: 0 var(--genericSpacing) var(--genericSpacing);
     background-color: var(--colorDark2);
+}
+
+
+
+
+
+
+/* Attributions Styling */
+.attributionsHeader {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.backLink {
+    display: inline-block;
+    margin: var(--genericSpacingFixed);
+    border-radius: var(--borderRoundedCorners);
+    border-style: solid;
+    border-width: var(--borderWidth);
+    border-color: var(--colorDark3);
+    background-color: var(--colorLight2);
+
+}
+.backLink:link, .backLink:visited, .backLink:hover, backLink:active {
+    color: var(--colorDark2);
+    font-weight: var(--fwBold);
+    font-size: var(--fsH2);
+}
+
+.attributionsMain {
+    margin: var(--genericSpacing);
+    padding: var(--genericSpacing);
+    border-radius: var(--borderRoundedCorners);
+
+    background-color: var(--colorDark3);
+    color: var(--colorLight1);
+}
+.attributionsMain p {
+    margin-bottom: var(--genericSpacing);
+}
+.attributionsImg {
+    width: 10%;
+    margin: 0 auto;
+    border-radius: var(--borderRoundedCorners);
+    border-style: solid;
+    border-width: var(--borderWidth);
+    border-color: var(--colorDark3);
 }
 
 
@@ -524,6 +563,9 @@ a, a:visited, a:hover, a:active {
 
 /* DYNAMIC STYLING SETTINGS */
 /* TODO: DONT FORGET ABOUT LANDSCAPE AND PORTRAIT CHECKS FOR STYLING */
+
+/* ALSO CHECK FOR LANDSCAPE MODE VS. PORTRAIT MODE */
+/* EG. SHIFT PROJECT DESCRIPTIONS TO RIGHT FOR MOBILE */
 
 /* 
     - Add feedback for hovering over project items with descriptions toggled
@@ -586,15 +628,3 @@ a, a:visited, a:hover, a:active {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
-
-
-
-
-
-
-/* ALSO CHECK FOR LANDSCAPE MODE VS. PORTRAIT MODE */
-/* EG. SHIFT PROJECT DESCRIPTIONS TO RIGHT FOR MOBILE */
-
-
-
