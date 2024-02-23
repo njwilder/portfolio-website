@@ -42,26 +42,30 @@ Palette for reference (dark to light):
     --borderRoundedCorners: 20px;
 
     /* Font sizes are initially selected for mobile, then scaled via fsScalar */
-    /* --fsScalar:  1;
-    --fsHeader:  calc(2   * var(--fsScalar) * 1rem);
-    --fsH1:      calc(3   * var(--fsScalar) * 1rem);
-    --fsH2:      calc(2.5 * var(--fsScalar) * 1rem);
-    --fsH3:      calc(2   * var(--fsScalar) * 1rem);
-    --fsBody:    calc(1.5 * var(--fsScalar) * 1rem);
-    --fsSidebar: calc(2.5 * var(--fsScalar) * 1rem); */
-    --fsH1:                2.00rem;
+    --fsScalar:  1;
+    --fsHeader:            calc(2.00 * var(--fsScalar) * 1rem);
+    --fsH1:                calc(2.00 * var(--fsScalar) * 1rem);
+    --fsH2:                calc(1.75 * var(--fsScalar) * 1rem);
+    --fsH3:                calc(1.50 * var(--fsScalar) * 1rem);
+    --fsBody:              calc(1.00 * var(--fsScalar) * 1rem);
+    --fsSidebar:           calc(1.50 * var(--fsScalar) * 1rem);
+    --fsProjectItemHeader: calc(2.00 * var(--fsScalar) * 1rem);
+    --fsProjectItemBody:   calc(1.25 * var(--fsScalar) * 1rem);
+    /* --fsH1:                2.00rem;
     --fsH2:                1.75rem;
     --fsH3:                1.50rem;
     --fsBody:              1.00rem;
     --fsSidebar:           1.50rem;
     --fsProjectItemHeader: 2.00rem;
-    --fsprojectItemBody:   1.25rem;
+    --fsprojectItemBody:   1.25rem; */
 
     --textWidth: 90%;
 
     --headerPadding: 2.5%;
     --listPaddingLeft: 10%;
     --listPaddingRight: 5%;
+
+    --navbarPadding: 15px;
 
     --hamburgerPadding:   20px;
     --hamburgerBarHeight: 12px;
@@ -93,6 +97,10 @@ Palette for reference (dark to light):
                  -3px  3px 2px var(--colorDark3),
                  -3px -3px 0   var(--colorDark3),
                   3px -3px 0   var(--colorDark3);
+
+
+    --navZLevel: 10;
+    --backgroundZLevel: -10;
 }
 
 
@@ -143,7 +151,7 @@ a, a:visited, a:hover, a:active {
     display: inline;
 }
 .mobileText {
-    display: none;
+    display: inline;
 }
 
 /* Used for clearing floats in the page */
@@ -152,57 +160,65 @@ a, a:visited, a:hover, a:active {
 }
 
 
-
 .headerBackgroundImg{
     position: sticky;
     top: 0;
-    /* Change from vh to percentage somehow? */
     height: 100vh;
     background-image: url(res/Header_img.jpg);
     background-size:cover;
     background-position-x: 60%;
     background-repeat: no-repeat;
-
-    z-index: -10;
+    z-index: var(--backgroundZLevel);
 }
-
-
-
-
-
 
 
 /* OLD NAV LIST */
-/* .nav_list {
-    display: none;
-    list-style-type: none;
+.header_nav {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--colorLight1);
+    z-index: var(--navZLevel);
+    text-align: center;
+}
+.header_nav ul {
+    width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: orange;
+    list-style: none;
+
+    display: flexbox;
+    flex-direction: row;
 }
-.nav_listItem {
-    float: left;
+.header_nav li {
+    display: inline-block;
+    width: fit-content;
+    padding: var(--navbarPadding);
 }
-.nav_link {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: var(--fsHeader);
+.header_nav a {
+    font-weight: var(--fwBold);
+    color: var(--colorDark1);
 }
-.nav_listItem:hover {
-    background-color: blue;
+.header_nav li:hover {
+    background-color: var(--colorDark1);
+}
+/* .header_nav li:has(:hover) + .header_nav a{
+    color: var(--colorLight2);
 } */
+.header_nav li:hover a {
+    color: var(--colorLight2);
+}
 
 .hamburger {
+    visibility: visible;
     position: fixed;
+    top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     gap: var(--hamburgerBarGap);
-    z-index: 11;
+    z-index: var(--navZLevel);
     padding: var(--hamburgerPadding);
     cursor: pointer;
     /* --colorDark3 */
@@ -226,7 +242,7 @@ a, a:visited, a:hover, a:active {
     max-height: var(--sidebarMaxHeight);
     margin: var(--sidebarTopMargin) var(--genericSpacing);
 
-    z-index: 10;
+    z-index: var(--navZLevel);
     position: fixed;
 
     background-color: var(--colorLight1);
@@ -293,7 +309,7 @@ a, a:visited, a:hover, a:active {
     width: 100%;
     height: var(--transitionImgHeight);
     background-color: none;
-    background-size:contain;
+    background-size: contain;
     background-repeat: repeat-x;
 }
 .transition_top      {background-image: url(res/testTransitionTop2.png);}
@@ -308,7 +324,6 @@ a, a:visited, a:hover, a:active {
     color: var(--colorLight2);
 }
 .aboutPage img {
-    display: float;
     float: none;
 
     max-width: var(--aboutImgWidth);
@@ -318,6 +333,9 @@ a, a:visited, a:hover, a:active {
     border-width: var(--borderWidth);
     border-radius: var(--borderRoundedCorners);
     border-color: var(--colorDark3);
+}
+.aboutPage p {
+    padding: var(--genericSpacing);
 }
 
 
@@ -377,19 +395,18 @@ a, a:visited, a:hover, a:active {
     font-size: var(--fsH3);
     font-weight: var(--fwBold);
     border-radius: var(--borderRoundedCorners);
+    cursor: pointer;
     /* For click effect */
     border-style: solid;
     border-color: var(--colorDark3);
     border-width: var(--borderWidth);
 }
 .projectsPage button:active {
-    /* border-width: calc(var(--borderWidth) * 2); */
-    padding: calc(var(--genericSpacing) / 2);
-    margin-bottom: calc(var(--genericSpacing) * 2);
+    border-width: calc(var(--borderWidth) * 2);
+    margin-bottom: calc(var(--borderWidth));
 }
 .projects_grid {
     display: flex;
-    flex-direction: row;
     flex-wrap:wrap;
     gap: var(--projItemGap);
     justify-content: center;
@@ -456,26 +473,35 @@ a, a:visited, a:hover, a:active {
 
 /* Contact Page */
 .contactPage {
-    display: block;
     width: 100%;
-    padding: var(--genericSpacing);
     background-color: var(--colorDark3);
     color: var(--colorLight2);
 }
 .contact_info {
-    padding: var(--genericSpacing);
+    width: 100%;
+    /* Idk why but this needs to be something inline to work with image margins... */
+    display: inline-block;
     border-radius: var(--borderRoundedCorners);
     background-color: var(--colorDark2);
 }
 .contact_info img {
+    float: none;
+
     max-width: var(--aboutImgWidth);
     margin: var(--imgMargin);
+
     border-style: solid;
-    border-color: var(--colorDark3);
     border-width: var(--borderWidth);
     border-radius: var(--borderRoundedCorners);
-
-    float: none;
+    border-color: var(--colorDark3);
+}
+.contact_info p {
+    padding: var(--genericSpacing);
+}
+.contact_info ul {
+    margin: 0;
+    list-style: none;
+    text-align: center;
 }
 
 
@@ -483,15 +509,6 @@ a, a:visited, a:hover, a:active {
 .footer {
     background-color: var(--colorDark2);
 }
-
-
-
-/* 
-    TODO
-     -have hamburger able to be opened via 'enter' when focused on (only space atm)
-     -Get slide down image working with sticky header background
-*/
-
 
 
 
@@ -512,11 +529,60 @@ a, a:visited, a:hover, a:active {
 /* DYNAMIC STYLING SETTINGS */
 /* TODO: DONT FORGET ABOUT LANDSCAPE AND PORTRAIT CHECKS FOR STYLING */
 
+/* 
+    - Add feedback for hovering over project items with descriptions toggled
+*/
 
 
+/* If user is not using a touch device */
+@media not (hover: none) {
+    /* Change mobile specific text to desktop text */
+    .mobileText  {display: none;}
+    .desktopText {display: inline;}
+}
 
+/* Non-touch devices should use the hamburger unless their width is above 500px */
+@media only screen and (min-width: 500px) and (not (hover: none)) {
+    /* Swap hamburger in favor of a navbar */
+    .hamburger {
+        visibility: hidden;
+    }
+    .header_nav {
+        visibility: visible;
+    }
+    /* When using the navbar to scroll so navbar doesn't cover headers */
+    html {
+        scroll-padding-top: calc(var(--navbarPadding) * 2 + var(--fsH1));
+    }
+}
 
+@media only screen and (min-width: 550px) {
+    .aboutPage img {
+        width: 50%;
+    }
+    .aboutPage #headshot {
+        float: left;
+    }
+    .aboutPage #lincoln_jazzed {
+        float: right;
+    }
+    .contactPage img {
+        width: 50%;
+        float: right;
+    }
+}
 
+@media only screen and (min-width: 700px) {
+    :root {
+        --fsScalar: 1.25;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .skills_panels {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
 
@@ -574,26 +640,5 @@ a, a:visited, a:hover, a:active {
 /* ALSO CHECK FOR LANDSCAPE MODE VS. PORTRAIT MODE */
 /* EG. SHIFT PROJECT DESCRIPTIONS TO RIGHT FOR MOBILE */
 
-/* If user is using a touch device */
-@media (hover: none) {
-    /* Change desktop specific text to mobile text */
-    .mobileText {display:inline;}
-    .desktopText {display:none;}
 
-    /* Old style project touch grid */
-    /* .projects_grid {
-        grid-template-rows: repeat(auto-fit calc(var(--projItemSideHeight) * 1.5));
-    }
-    .projectItem {
-        height: calc(var(--projItemSideHeight) * 1.5);
-    }
-    .projectItem h3 {
-        top: calc(var(--projItemSideHeight) - var(--headerPadding) * 2 - var(--borderWidth) * 2);
-    }
-    .projectItem p {
-        position: relative;
-        height: var(--projItemSideHeight);
-        opacity: 1;
-        background-color: transparent;
-    } */
-}
+
