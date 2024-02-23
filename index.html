@@ -20,7 +20,7 @@
             </ul>
         </nav>
 
-        <button class="hamburger" id="hamburger" value="closed" onclick="toggleHamburger('hamburger')">
+        <button class="hamburger" id="hamburger" value="closed" onclick="toggleHamburger()">
             <div class="bar" aria-hidden="true"></div>
             <div class="bar" aria-hidden="true"></div>
             <div class="bar" aria-hidden="true"></div>
@@ -29,11 +29,11 @@
             <h1>Menu</h1>
             <nav>
                 <ul>
-                    <li><a href="#home"     onclick="toggleHamburger('hamburger')">Home</a></li>
-                    <li><a href="#about"    onclick="toggleHamburger('hamburger')">About</a></li>
-                    <li><a href="#skills"   onclick="toggleHamburger('hamburger')">Skills</a></li>
-                    <li><a href="#projects" onclick="toggleHamburger('hamburger')">Projects/Work</a></li>
-                    <li><a href="#contact"  onclick="toggleHamburger('hamburger')">Contact Me</a></li>
+                    <li><a href="#home"     onclick="toggleHamburger()">Home</a></li>
+                    <li><a href="#about"    onclick="toggleHamburger()">About</a></li>
+                    <li><a href="#skills"   onclick="toggleHamburger()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleHamburger()">Projects/Work</a></li>
+                    <li><a href="#contact"  onclick="toggleHamburger()">Contact Me</a></li>
                 </ul>
             </nav>
         </aside>
@@ -172,7 +172,7 @@
 
         <div class="projectsPage" id="projects">
             <h1>Personal Projects and Work</h1>
-            <button value="disabled" onclick="toggleDescriptions(this)">Toggle Descriptions</button>
+            <button id="projectDescriptionButton" value="disabled" onclick="toggleDescriptions()">Toggle Descriptions</button>
 
             <div class="projects_grid">
                 <!-- Add video game from scratch project -->
@@ -207,7 +207,8 @@
                     <img src="res/lincoln_derp.jpg" alt="">
                     <p>
                         This portfolio website you are currently on! The goal was to refamiliarize with 
-                        HTML and CSS as well as hosting websites via WIP.
+                        HTML, CSS, and JavaScript as well as trying website hosting via 'Github Pages'. 
+                        Also a custom domain name thanks to as well as getting 'Spaceship'.
                         <br>
                         <span class="mobileText">Tap</span>
                         <span class="desktopText">Click</span> 

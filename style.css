@@ -148,7 +148,7 @@ a, a:visited, a:hover, a:active {
 
 /* For mobile devices, display proper language */
 .desktopText {
-    display: inline;
+    display: none;
 }
 .mobileText {
     display: inline;
@@ -467,10 +467,6 @@ a, a:visited, a:hover, a:active {
 }
 
 
-
-
-
-
 /* Contact Page */
 .contactPage {
     width: 100%;
@@ -479,7 +475,8 @@ a, a:visited, a:hover, a:active {
 }
 .contact_info {
     width: 100%;
-    /* Idk why but this needs to be something inline to work with image margins... */
+    /* Idk why, but this needs to be something inline to work with image margins and I've 
+    spent a little too long researching why with no results*/
     display: inline-block;
     border-radius: var(--borderRoundedCorners);
     background-color: var(--colorDark2);
@@ -499,7 +496,7 @@ a, a:visited, a:hover, a:active {
     padding: var(--genericSpacing);
 }
 .contact_info ul {
-    margin: 0;
+    margin: 0 var(--genericSpacing) var(--genericSpacing);
     list-style: none;
     text-align: center;
 }
@@ -531,6 +528,7 @@ a, a:visited, a:hover, a:active {
 
 /* 
     - Add feedback for hovering over project items with descriptions toggled
+    - Project headers with toggled descriptions not working as expected
 */
 
 
@@ -557,8 +555,9 @@ a, a:visited, a:hover, a:active {
 }
 
 @media only screen and (min-width: 550px) {
-    .aboutPage img {
-        width: 50%;
+    :root {
+        --aboutImgWidth: 40%;
+        --imgMargin: 25px;
     }
     .aboutPage #headshot {
         float: left;
@@ -567,7 +566,6 @@ a, a:visited, a:hover, a:active {
         float: right;
     }
     .contactPage img {
-        width: 50%;
         float: right;
     }
 }
@@ -587,53 +585,6 @@ a, a:visited, a:hover, a:active {
 
 
 
-/* CHANGES WHICH NEED TO BE MADE VIA BREAK POINTS! */
-    /* --aboutImgWidth:  40%; */
-    /* --imgMargin: 25px; */
-
-    /* .aboutPage #headshot {
-        float: left;
-    }
-    .aboutPage #lincoln_jazzed {
-        float: right;
-    } */
-
-    /* .skills_panels {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .skills_languages, 
-    .skills_libraries {
-        margin-right: var(--imgMargin);
-    } */
-
-    /* .contact_info img {
-        float: right;
-    } */
-
-
-
-
-/* OLD SETTINGS FOR SITE RESPONSIVENESS */
-/* Tablets */
-/* @media only screen and (min-width: 481px) and (max-width: 880px) {
-    :root {
-        --fsScalar: 0.9;
-    } */
-
-    /* Switch to vertical view of skills */
-    /* .skills_panels {
-        grid-template-columns: none;
-    }
-    .skills_languages, 
-    .skills_libraries, 
-    .skills_professional {
-        margin-bottom: var(--genericSpacing);
-    }
-    .skills_languages, 
-    .skills_libraries {
-        margin-right: 0;
-    }
-} */
 
 
 
