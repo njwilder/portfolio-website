@@ -498,6 +498,30 @@ a, a:visited, a:hover, a:active {
 }
 
 
+/* STYLING FOR PAGES WHICH ARE NOT index.html */
+
+
+
+
+/* Back Button/Link used by subpages to get back to index.html */
+.backLink {
+    display: inline-block;
+    margin: var(--genericSpacingFixed);
+    border-radius: var(--borderRoundedCorners);
+    border-style: solid;
+    border-width: var(--borderWidth);
+    border-color: var(--colorDark3);
+    background-color: var(--colorLight2);
+
+}
+
+
+
+/* About Me Detailed Styling */
+.aboutDetailedMain p {
+    padding: var(--genericSpacing);
+}
+
 
 
 
@@ -509,16 +533,7 @@ a, a:visited, a:hover, a:active {
     padding: 0;
     margin: 0;
 }
-.backLink {
-    display: inline-block;
-    margin: var(--genericSpacingFixed);
-    border-radius: var(--borderRoundedCorners);
-    border-style: solid;
-    border-width: var(--borderWidth);
-    border-color: var(--colorDark3);
-    background-color: var(--colorLight2);
 
-}
 .backLink:link, .backLink:visited, .backLink:hover, backLink:active {
     color: var(--colorDark2);
     font-weight: var(--fwBold);
