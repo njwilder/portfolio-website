@@ -153,6 +153,10 @@ a, a:visited, a:hover, a:active {
     clear:both;
 }
 
+/* Used for bold text between span elements */
+.bold {
+    font-weight: var(--fwBold);
+}
 
 .header_nav {
     visibility: hidden;
@@ -261,7 +265,7 @@ a, a:visited, a:hover, a:active {
     position: sticky;
     top: 0;
     height: 100vh;
-    background-image: url(res/Header_img.jpg);
+    background-image: url(res/picsOfMe/Header_img.jpg);
     background-size:cover;
     background-position-x: 60%;
     background-repeat: no-repeat;
