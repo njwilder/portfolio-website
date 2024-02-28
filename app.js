@@ -96,7 +96,6 @@ function updateProjItemHeaderHeight() {
     let buttonVal = document.getElementById("projectDescriptionButton").value;
     // Reset the header size
     if (buttonVal == "enabled") {
-        console.log("Firing off update event");
         let projectItems = document.getElementsByClassName(projectItemClassName);
         for (let item = 0; item < projectItems.length; item++) {
             // Redo the toggleDescription calculations to ensure proper text heights
@@ -107,11 +106,10 @@ function updateProjItemHeaderHeight() {
 }
 
 
-const fontScalarMin = window.matchMedia("(min-width: 700px)");
-const fontScalarMax = window.matchMedia("(max-width: 700px)");
-
 // Whenever the 700px threshold is passed, we need to recalculate header heights for potentially
 // enabled descriptions.
+const fontScalarMin = window.matchMedia("(min-width: 700px)");
+const fontScalarMax = window.matchMedia("(max-width: 700px)");
 fontScalarMin.addEventListener("change", e => {
     if (e.matches) {
         updateProjItemHeaderHeight();

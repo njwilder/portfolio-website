@@ -10,6 +10,7 @@
     </head>
     <body>
 
+        <!-- Navigation -->
         <nav class="header_nav">
             <ul>
                 <li><a href="#home"    >Home</a></li>
@@ -38,6 +39,7 @@
             </nav>
         </aside>
 
+        <!-- Main content -->
         <!-- Strictly a jump location for the sidebar -->
         <div id="home"></div>
 
@@ -48,9 +50,9 @@
 
         <div class="transition_top" aria-hidden="true"></div>
 
-        <div class="aboutPage" id="about">
+        <div class="aboutSection" id="about">
             <h1>About Me</h1>
-            <img id="headshot" src="res/headshot_glasses.jpg" alt="A headshot of Noah smiling with glasses on.">
+            <img id="headshot" src="res/picsOfMe/headshot_glasses.jpg" alt="A headshot of Noah smiling with glasses on.">
             <p>
                 One of my greatest joys in life is solving technical problems. A former librarian 
                 and Datacenter lab technician for the University of New Hampshire's 
@@ -64,13 +66,13 @@
 
             <div class="clear" aria-hidden="true"></div>
 
-            <img id="lincoln_jazzed" src="res/lincoln_jazzed.jpg" alt="A very happy dog (Lincoln). His eyes are gleaming and his tongue is sticking out.">
+            <img id="lincoln_jazzed" src="res/picsOfLinc/lincoln_jazzed.jpg" alt="A very happy dachshund (Lincoln). His eyes are gleaming and his tongue is sticking out.">
             <p>
                 When I am not feverishly coding, I enjoy oil painting with my little German companion, Lincoln, 
                 as well as partaking in as many strange hobbies and side activities as I can get my hands on!
             </p>
             <p>If you want to get to know more about me: 
-                <a href="about_detailed.html">
+                <a href="subpages/about_detailed.html">
                     <span class="desktopText">CLICK HERE!</span>
                     <span class="mobileText">TAP HERE!</span> 
                 </a>
@@ -83,7 +85,7 @@
         <div class="transition_middle_1"></div>
 
         <!-- Todo: Have these sections split into separate columns if resolution is wide enough -->
-        <div class="skillsPage" id="skills">
+        <div class="skillsSection" id="skills">
             <h1>Skills and Experience</h1>
 
             <div class="skills_panels">
@@ -170,8 +172,8 @@
 
         <div class="transition_middle_2" aria-hidden="true"></div>
 
-        <div class="projectsPage" id="projects">
-            <h1>Personal Projects and Work</h1>
+        <div class="projectsSection" id="projects">
+            <h1>Personal Projects</h1>
             <button id="projectDescriptionButton" value="disabled" onclick="toggleDescriptions()">Toggle Descriptions</button>
 
             <div class="projects_grid">
@@ -179,7 +181,7 @@
 
                 <a class="projectItem" id="proj_hackArchitecture" href="index.html">
                     <h3>HACK System Architecture</h3>
-                    <img id="imgTest" src="res/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
+                    <img id="imgTest" src="res/picsOfProjects/hack_system/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
                     <p>
                         My foray into the hardware side of computing. I wanted to learn more about what makes 
                         computers compute more intimately.
@@ -192,7 +194,7 @@
 
                 <a class="projectItem" id="proj_tf2Randomizer" href="index.html">
                     <h3>'TF2' Loadout Generator</h3>
-                    <img src="res/lincoln_jazzed.jpg" alt="">
+                    <img src="res/picsOfLinc/lincoln_jazzed.jpg" alt="">
                     <p>
                         A website I made to practice HTML, CSS, and JavaScript. Random loadout 
                         generator for the videogame 'Team Fortress 2'. 
@@ -204,7 +206,7 @@
                 </a>
                 <a class="projectItem" id="proj_portfolio" href="index.html">
                     <h3>Portfolio Website</h3>
-                    <img src="res/lincoln_derp.jpg" alt="">
+                    <img src="res/picsOfLinc/lincoln_derp.jpg" alt="">
                     <p>
                         This portfolio website you are currently on! The goal was to refamiliarize with 
                         HTML, CSS, and JavaScript as well as trying website hosting via 'Github Pages'. 
@@ -215,9 +217,9 @@
                         to learn more!
                     </p>
                 </a>
-                <a class="projectItem" id="proj_iol" href="projects/project_iol.html">
+                <!-- <a class="projectItem" id="proj_iol" href="projects/iol.html">
                     <h3>The IOL</h3>
-                    <img src="res/french.jpg" alt="Noah wearing a beret and an ascot celebrating Bastille day while sitting at a desk.">
+                    <img src="res/picsOfMe/french.jpg" alt="Noah wearing a beret and an ascot celebrating Bastille day while sitting at a desk.">
                     <p>
                         An exploration of some of my efforts, things I learned, and my experiences 
                         during my 2 years at the IOL. 
@@ -226,16 +228,16 @@
                         <span class="desktopText">Click</span> 
                         to learn more!
                     </p>
-                </a>
+                </a> -->
             </div>
         </div>
 
         <div class="transition_middle_1" aria-hidden="true"></div>
 
-        <div class="contactPage" id="contact">
+        <div class="contactSection" id="contact">
             <h1>Contact Me</h1>
             <div class="contact_info">
-                <img src="res/headshot_crazed.jpg" alt="">
+                <img src="res/picsOfMe/headshot_crazed.jpg" alt="">
                 <p>
                     Please feel free to reach out to me anytime with inquiries, I am happy 
                     to do commission work, details of which can be nailed down over email.
@@ -249,7 +251,7 @@
                 <h2>Contact Info</h2>
                 <ul>
                     <li>Email: njwilder506@gmail.com</li>
-                    <li><a href="https://drive.google.com/file/d/1Mmbkk-rxpoCyG_BOURfvV5lFJB5aDD6F/view?usp=sharing">R&eacutesum&eacute</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Mmbkk-rxpoCyG_BOURfvV5lFJB5aDD6F/view?usp=sharing">Résumé</a></li>
                     <li><a href="https://www.linkedin.com/in/noah-wilder-9005662b3/">Linkedin</a></li>
                     <li><a href="https://github.com/njwilder">Github</a></li>
                 </ul>
@@ -259,7 +261,7 @@
         <div class="transition_middle_2" aria-hidden="true"></div>
 
         <div class="footer">
-            <a href="attribution.html">Attribution</a>
+            <a href="subpages/attributions.html">Attribution</a>
         </div>
 
     </body>
