@@ -633,14 +633,14 @@ a, a:visited, a:hover, a:active {
 
 
 /* If user is not using a touch device */
-@media not (hover: none) {
+@media only screen and not (hover: none) {
     /* Change mobile specific text to desktop text */
     .mobileText  {display: none;}
     .desktopText {display: inline;}
 }
 
 /* Non-touch devices should use the hamburger unless their width is above 500px */
-@media only screen and (min-width: 500px) and (not (hover: none)) {
+@media only screen and (not (hover: none)) and (min-width: 500px) {
     /* Swap hamburger in favor of a navbar */
     .hamburger {
         visibility: hidden;
