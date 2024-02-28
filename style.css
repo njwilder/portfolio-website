@@ -681,8 +681,6 @@ a, a:visited, a:hover, a:active {
     .aboutPage img {
         float: left;
     }
-    .aboutPage {
-    }
     .aboutPage .questionsAndAnswers img {
         margin: 0 var(--genericSpacing);
     }
@@ -699,6 +697,15 @@ a, a:visited, a:hover, a:active {
 @media only screen and (min-width: 750px) {
     .skills_panels {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    :root {
+        --fsScalar: 1.3;
+        --projItemScalar: 1.3;
+        --transitionImgScalar: 1.3;
+        --aboutImgWidth: 30%;
     }
 }
 
@@ -723,7 +730,7 @@ a, a:visited, a:hover, a:active {
         --fsScalar: 1.6;
         --projItemScalar: 1.6;
         --transitionImgScalar: 1.6;
-        --aboutImgWidth: 30%;
+        --aboutImgWidth: 20%;
     }
 }
 
