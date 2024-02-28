@@ -8,24 +8,25 @@
         <title>Noah Wilder - Portfolio</title>
         <link rel="stylesheet" href="../style.css">
     </head>
-    <body>
+    <body class="aboutPage">
+
         <div class="aboutDetailedHeader">
             <a class="backLink" href="../index.html">Go Back</a>
-            <h1 id="about-header">About Me: Detailed</h1>
         </div>
 
-        <div class="aboutDetailedMain">
+        <div class="transition_top" aria-hidden="true"></div>
 
+        <div class="aboutMe">
+            <h1>About Me</h1>
             <p>
                 "For fortune and glory, kid. For fortune and glory..."
             </p>
-
-            <!-- TODO: ADD HOBBY STUFF LINK HERE OR SOMETHING ELSE DESIGN-EY -->
-
             <p>
                 I am continually fascinated by the use of abstraction in computing to achieve some of 
                 the most impressive feats in human history.
             </p>
+
+            <img src="../res/picsOfMe/noahDental.jpg" alt="4 year old Noah and his father at a dental office.">
             <p>
                 I have been a video game junky since I could walk and talk. For better and for worse, I 
                 have practically been raised off of games from the 1980's to present day. There 
@@ -44,8 +45,6 @@
                 to control the beast that lay inside of the console's outer shell? And how was this machine 
                 able to tell which game to play?
             </p>
-
-            <!-- REVIEW THESE WRITINGS! -->
             <p>
                 Unfortunately, I didn't take this curiosity past shrugging and continuing my insane 
                 gaming binges. I was curious, but early on in my life I didn't realize that I could mess 
@@ -58,7 +57,9 @@
                 It is cliché to say, however it really is how you carry yourself after these events which defines 
                 you as a person.
             </p>
+            <div class="clear"></div>
 
+            <img src="../res/picsOfMe/noahSmart.jpg" alt="Noah smiling at the camera sitting in a car.">
             <p>
                 So let's skip past my early life and jump to college. I originally started at 
                 'Southern New Hampshire University' (SNHU) through their online program, however, in a defining 
@@ -70,10 +71,9 @@
                 fully commit to the education I wanted. I decided to change my life trajectory 
                 and transfer to the 'University of New Hampshire' (UNH). It is funny, but this feels like 
                 one of the first real decisions I have ever made in my life. I look back now and it seems 
-                like I was always taking the path of least resistance, kind of plodding along towards 
-                nothing. It's all so strange looking back trying to make sense of the past.
+                like I was always taking the path of least resistance, kind of plodding along. 
+                It's all so strange looking back trying to make sense of the past.
             </p>
-
             <p>
                 I didn't know what college was going to be like. I felt charismatic and my literacy 
                 felt above average for my age. I was armed with a lot of essoteric knowledge from past 
@@ -84,7 +84,6 @@
                 had what it took, but I didn't know who I was or what I was capable of doing. 
                 College seemed like a safe place to find out how far I could push myself.
             </p>
-
             <p>
                 I only realized going into college that I could actually aspire towards creating 
                 things like videogames. As I explored 'software development' as a possible field 
@@ -104,116 +103,245 @@
             <p>
                 After a couple years in college, I decided that I wanted to work harder than I already was 
                 and get a second job (I was already working as a librarian at this time). 
-                A good option seemed to be UNH's InterOperability Laboratory, which I 
-                applied to, was interviewed, and was hired for! More about this is explained in the 
-                <a href="../projects/iol.html">'IOL projects section'</a> if you are interested! I ended 
-                up falling in love with the IOL and many of the people that worked there. I never felt 
+                A good option seemed to be UNH's InterOperability Laboratory. I applied to the IOL, 
+                was interviewed, and ended up getting hired as a part of the lab's Datacenter team! 
+                I absolutely fell in love with the IOL and many of the people that worked there. I never felt 
                 so happy working as I did at 'the lab', as its inhabitants affectionately called it. 
-                Long story cut short in favor of differring it to its own section, I worked flat-out for 
-                2 years straight while attending college fulltime, but events in my personal life during 
-                the last couple months of my time at 'the lab' started taking their toll on me mentally and 
-                physically and I ultimately felt like my dedication and hard work was being taken for 
-                granted by everyone around me. I realized I needed to take more care of myself for a change 
-                and leave my work. I decided to quit and take some time to recouperate and get back in touch 
-                with many of the things I had sacrificed for the job, and the people / pets I had put by 
-                the wayside during this time. I had found my limit and I had proven to myself that I was 
-                able to learn many things if I could put my mind to them. I also found that I was capable 
-                of spending long hours working towards goals without losing hope or determination, and 
-                I have found a passion in computer programming and computation in general, which I never 
-                knew I could have about something in this world! My time at the IOL was unbelievably 
-                impactful to me. I learned so much I wouldn't have been able to through UNH normally. 
-                I built my knowledge of many foundational skills and got hands-on experience working 
-                with others I consider way more capable and intelligent than myself. It was an honor, 
-                and even though my experience was soured by the end of my time there, the IOL was a 
-                great influence on me and helped me develop my work ethic and character.
+                I was simply intoxicated by the learning and hands-on experience available when I 
+                joined. Since I was hired during the Covid-19 quarantine at a time when everyone at work 
+                was remote, I had the perfect environment to start working in-person with just me and my 
+                bosses. I felt free to ask questions, tinker with machines around the office, and spend 
+                time pouring over specifications and test procedures for NVMe PCIe SSDs. I really enjoy 
+                working in-person as possible, so it felt like the perfect storm coming into my first tech 
+                related job. I felt like what I was learning on the job was infinitely more valuable than 
+                from my formal education, so I would spend more and more time at the lab. This extended 
+                into weekends, holidays, etc.. I was having the time of my life and working harder than I 
+                have ever worked in my life.
             </p>
 
-            <!-- Add pictures of paintings -->
-            <!-- images of bob ross paintings with links to youtube videos -->
+            <img src="../res/picsOfMe/french.jpg" alt="Noah at a desk with a beret and ascot on, celebrating Bastille day.">
+            <p>
+                Long story cut short, I worked flat-out for 2 years straight while attending college full-time, 
+                but events in my personal life during the last few months of my time at the lab started 
+                taking their toll on my mental and physical health and I felt like I didn't have any support. At 
+                the time I had worked myself up to be a 'silver bullet' employee at the lab, though I was tempered 
+                extremely by my humility and my general glee at working on solutions to problems. I was always 
+                not confident in myself or my ability, but I like to think my hard work and sheer effort on 
+                problems got our department and I through a lot of difficult times.
+                I realized that nobody I worked with cared about me or anything other than themselves, and that 
+                was a crushing realization to me that I couldn't quite recover from. I observed the people around me 
+                and things became too toxic. The work environment deteriorated into 
+                something I just didn't want to be a part of. I also came under extremely heavy burnout from 
+                constant 80 hour weeks (not counting college) for 6 months to a year straight. I made the unfortunate decision to ignore 
+                myself and continue my work at break-neck pace for another 6 months before reaching my breaking 
+                limit with the job and the people there. I decided to quit and take some time to recouperate 
+                and get back in touch with many of the things I had sacrificed for the job, and the 
+                people / pets I had put by the wayside during this time. 
+                
+            </p>
+            <p>
+                My time at the IOL was unbelievably impactful to me. I learned so much I wouldn't have 
+                been able to through UNH normally. I built my knowledge of many foundational skills and got 
+                hands-on experience working with others I consider way more capable and intelligent than myself. 
+                It was an honor, and even though my experience was soured by the end of my time with the IOL, 
+                it was ultimately an excellent influence on me. I was able to develop and refine my work ethic 
+                and character in an accepting environment full of opportunity and generosity. I found that it 
+                was okay to not know anything, or to be confused, so long as you were asking questions and moving 
+                towards understanding every day. In this way, you can become reliable and knowledgable 
+                within any field given time and continual effort.
+            </p>
+            <p>
+                I am able to see through this mess of negativity and recognize that the IOL's vision and general workmanship 
+                was a cause worth fighting for and worth 2 years of complete dedication from me. I had found my limit and I had 
+                proven to myself that I was able to learn many things if I could put my mind to them. I also 
+                found that I was capable of spending long hours working towards goals without losing hope 
+                or determination. I have also found a passion in computer programming and computation in 
+                general, which I never knew I could have about anything in this world before!
+            </p>
 
             <p>
                 Coming into college, I felt like I had been reborn! I picked up many hobbies and skills I always 
                 wanted to try but never felt like I was worthy of, or could excel in. I took up archery, roller-skating, 
                 Oil painting (plein air during college, subject painting coming out of college), miniature painting, 
-                playing guitar, beekeeping, electrical engineering hobby work. I also found coding and software design to be a fun 
-                hobby I enjoyed working at even after coding all day long at work. I really enjoy having a bunch of pokers in 
-                the fire and juggling different projects all the time! It felt like a good way to keep sane 
-                was to constantly be improving myself and my knowledge while working on the CS curriculum (which 
-                can be brutal while working two jobs).
+                playing guitar, beekeeping, electrical engineering hobby work. I also found coding and software design to be fun 
+                even after coding all day at work! I really enjoy having a bunch of pokers in the fire and 
+                juggling different projects all the time!
             </p>
-
             <p>
-                After 'the lab', there isn't too much to update you on which can't be seen through the projects I have 
+                After the IOL, there isn't too much to update you on which can't be seen through the projects I have 
                 in my 'projects' section. I am working on a few projects semi-secretly which I am 
-                excited to be able to present when they become presentable!
+                excited to be able to present when they become presentable! As was alluded to above, 
+                I decided to spend some time reconnecting with myself. I have spent 
+                my time reading, writing, coding, traveling, playing music, painting, and generally exploring 
+                the world around me. I have put a big focus on helping family and trying to spend as much 
+                time with them as I can. I have a few plans for the future, one of which is to continue onward 
+                towards a Master's in Computer Science at UNH!
             </p>
+        </div>
 
+        <div class="transition_middle_1"></div>
 
-
-            <!-- Add Q/A -->
+        <div class="aboutPainting">
+            <h1>Paintings</h1>
             <p>
-                <span class="bold">Q: What is your favorite thing about being a software developer?</span>
-                <br>
-                <span class="bold">A:</span> I really enjoy problem solving. The feeling of getting your vision working the way 
-                you want is out of this world! I like building complex systems from smaller lower-level 
-                concepts and implementations to create things that genuinely impact the world, even if it 
-                is a small impact!
-                <br>
-                A close second would be collaborating with other devlopers. I really like getting to know 
-                others and seeing their solutions to programming problems. I enjoy weighing different 
-                solutions to problems which I might have not even thought about.
+                Since I can't resist, I will share a couple of my paintings I have done. I don't have any formal 
+                training in painting, and Oil paint as a medium is something I still do not have too much 
+                experience with. All of my paintings tend to have some sort of 'challenge' tied with them 
+                to help me learn more and (hopefully) improve a little bit at a time.
             </p>
-            <p>
-                <span class="bold">Q: What are your favorite books?</span>
-                <br>
-                <span class="bold">A:</span> I really enjoy reading and I have a few favorites that I really enjoy:
-            </p>
-            <p>
-                <span class="bold">The Soul of a New Machine</span> by Tracy Kidder: This book really speaks to me as someone who has really
-                given their entire being to get a project to work given a soul crushing workload
-                and a seemingly impossible task within a relatively short amount of time (many times).
-                I find myself relating to many of the computer engineers of the 'Eagle' system in
-                how they felt and worked on problems. I felt like I was really unique in my experiences 
-                and my feelings towards these machines before sitting down and reading this book. I had come to 
-                discover that there where other sick and twisted individuals out there who enjoyed working way 
-                past the call of duty on a project. I especially enjoy chapter 5: "Midnight Programmer" due to how 
-                cathartic and relatable it is to me and my work, the entire book in general is extremely relatable 
-                and entertaining to read through! I would give anything to be able to read it for the first time again!
 
-            </p>
-           <p>
-                <span class="bold">The Elements of Computing Systems</span> by Noam Nisan and Shimon Schocken: Before reading this book, 
-                I felt like I never quite got a proper idea of how computers actually work. I had gone through 
-                my entire time at college and the IOL working with these mystical electrical contraptions and 
-                yet I felt like I was not really any closer to understanding just how these systems were 
-                actually processing the code I wrote under the hood. Working through this book finally made 
-                a lot of computing 'click' for me. I now more clearly understand why instruction sets 
-                are a thing, how electrical signals in a system can move a character on a screen, and many
-                other aspects of computers. I believe it is important to know at least something about the hardware you
-                are trying to control with code to become a better developer. I wished I had read this book before I
-                started college or else I might have been less hung up on the "why"s of computer science. I 
-                became so interested in it, that I ended up attempting to create the system outlined in the 
-                book physically, starting at first with breadboards and wires, but settling with actually 
-                designing custom PCBs for a more "perminant" setup! This project will appear in the 'Projects' 
-                section when it becomes more presentable.
-           </p>
-           <p>
-                <span class="bold">The Silmarillion</span> by J. R. R. Tolkien (edited and published posthumously by Christopher Tolkien): 
-                The Silmarillion reads a lot like the Christian Bible, but from the perspective of the Elves of 
-                Middle-Earth. It deals with many of the Gods and events that took place before 'The Hobbit' and 
-                'The Lord of the Rings', with these events being mentioned as more of a footnote at the end of 
-                the Silmarillion rather than being center stage. Long before 'the Ring' and even hobbits, 
-                there was Melkor (later to be referred to as 'Morgoth', or 'the Black Foe'/'Dark Tyrant') 
-                and the Silmarils. This is not a book that relates to my profession directly, however I believe
-                unraveling the history and story of J.R.R. Tolkien's Middle-earth displays skills which
-                translate to software development pretty well. This being one of my favorite books shows
-                that I enjoy untangling seemingly insurmountable networks of character associations and
-                lore. I find the Silmarillion to be much like a software system in that there are many
-                components in the narrative which work together to produce a relatively coherent narrative
-                (product). It requires some natural obsessiveness to work through which I feel is shared among
-                passionate software developers. Also the story generally blows my socks off every time I read it. 
-           <p>
+            <div class="painting">
+                <img src="../res/picsOfProjects/portraits/jasper.jpg" alt="Triadic portrait painting of a lovely dog named Jasper in green, orange, and purple.">
+                <p class="aboutPaintingCaption">
+                    "Jasper": This is a triadic portrait painting of a coworker's adorable dog Jasper which inspired 
+                    me to paint him! At this point, I had only done landscape paintings in oil and I tried an 
+                    interesting image transfer technique to transfer a pencil drawing onto canvas via oil tracing. 
+                    This painting took me 40 hours (you heard that right) of off-and-on work to get the coloring and texture the way I wanted, 
+                    and I think it was successful given the circumstances. I wanted an abstract sort of vibe with it 
+                    and I really took my time just enjoying to process.
+                </p>
+            </div>
+
+            <div class="painting">
+                <img src="../res/picsOfProjects/portraits/scully.jpg" alt="Monochromatic portrait painting of Scully from X-Files in red.">
+                <p class="aboutPaintingCaption">
+                    "": This is a monochromatic portait paint of Scully from the X-Files in red. I was really inspired to 
+                    do a pair of paintings of David Duchovny and Gillian Anderson (Fox Mulder and Dana Scully respectively) 
+                    with Mulder in blue and Scully in red. I started with Mulder's painting, but I never ended up 
+                    finishing it. The Scully portrait I ended up banging out in an afternoon using a prepainting 
+                    drawing method using heavily thinned oil paint, before painting in subsequently thicker layers. 
+                    There are flaws to the portrait but I think the likeness is pretty well attained considering. 
+                    I wanted to focus on painting value as opposed to color.
+                </p>
+            </div>
+
+            <div class="painting">
+                <img src="../res/picsOfProjects/portraits/cptKirk.jpg" alt="Portrait painting of Captain Kirk from Star Trek (Original Series).">
+                <p class="aboutPaintingCaption">
+                    "Cpt. Kirk": Returning back to color, I spent a considerable number of weeks off-and-on working 
+                    on this portrait. I spent such a long time trying to get the face the way I wanted that 
+                    I ended up deciding to not texture the body to draw the attention towards the shifting values 
+                    of the face. I had a lot of trouble going from the Scully picture back to using many different 
+                    types of colors again while also trying to respect value. Every time I felt like I was close 
+                    to done, I realized the color was not quite how I liked it and I would keep iterating over it. 
+                    I learned that you shouldn't outright ban certain colors because of your preconceived notions, 
+                    for instance this face has a great deal of green in it! Colors are fascinating and it is 
+                    extremely interesting to see how the meaning of a color you put down on the canvas can actually 
+                    change depending on colors around it.
+                </p>
+            </div>
+
+            <div class="painting">
+                <img src="../res/picsOfProjects/portraits/grampChubby.jpg" alt="Portrait painting of my grandfather. A little chubbier and mispreportioned than the reference.">
+                <p class="aboutPaintingCaption">
+                    "Gramp": This is a speed-painting done in a couple hours. I wanted to capture a charming picture of 
+                    my grandfather to give my grandparents before a flight they needed to catch. Overall the painting 
+                    is a little wonky and my grandfather is portrayed much chubbier than the reference, 
+                    but I think it captured his essence.
+                </p>
+            </div>
+        </div>
+
+        <div class="transition_middle_2"></div>
+
+        <div class="questionsAndAnswers">
+            <h1>Q and A</h1>
+
+            <div class="qa">
+                <p>
+                    <span class="bold">Q: What is your favorite thing about being a software developer?</span>
+                    <br>
+                    <span class="bold">A:</span> I really enjoy problem solving. The feeling of getting your vision working the way 
+                    you want is out of this world! I like building complex systems from smaller lower-level 
+                    concepts and implementations to create things that genuinely impact the world, even if it 
+                    is a small impact!
+                    <br>
+                    A close second would be collaborating with other devlopers. I really like getting to know 
+                    others and seeing their solutions to programming problems. I enjoy weighing different 
+                    solutions to problems which I might have not even thought about.
+                </p>
+            </div>
+
+            <div class="qa">
+                <p>
+                    <span class="bold">Q: What is your favorite videogame?</span>
+                    <br>
+                    <span class="bold">A:</span> This is an answer that changes all the time for me. 
+                    At the time of writing this, I will tentatively say that Valve's 'Left 4 Dead 2' 
+                    is the quintessential Coop game and might be one of the best games ever made. 
+                    It has flaws, but there is great potential still with it that no game has really 
+                    come close to reaching <span class="bold">still</span>, which is mind boggling to me. 
+                    I am partial to games with 'simple' approachable mechanics with heavy emergent gameplay 
+                    due to these systems. Things like 'L4D2' and the 'Halo' series highlight this. In 'Halo: CE', 
+                    you are a dude with a gun running around shooting aliens. The complexities come from the way 
+                    aliens react, physics items, and the weapons sandbox.
+                </p>
+                <p>
+                    Speaking of emergent gameplay, I really enjoy 'Dark Souls'. It is such a pleasure to play every 
+                    time, and emergent gameplay is abundant. The world of Lordran in Dark Souls is captivating and 
+                    I like that the game doesn't hold your hand. You are "the chosen undead" in a world of 
+                    hollows, weird fire bugs, and stone giants. You have to find your way through the world. I love 
+                    that!
+                </p>
+            </div>
+            
+            <div class="qa">
+                <p>
+                    <span class="bold">Q: What are your favorite books?</span>
+                    <br>
+                    <span class="bold">A:</span> I really enjoy reading and I have a few favorites that I really enjoy:
+                </p>
+                <img src="../res/picsOfBooks/soulOfNewMachine.jpg" alt="Cover of the book 'The Soul of a New Machine'">
+                <p>
+                    <span class="bold">'The Soul of a New Machine' by Tracy Kidder</span>: This book really speaks to me as someone who has really
+                    given their entire being to get a project to work given a soul crushing workload
+                    and a seemingly impossible task within a relatively short amount of time (many times).
+                    I find myself relating to many of the computer engineers of the 'Eagle' system in
+                    how they felt and worked on problems. I felt like I was really unique in my experiences 
+                    and my feelings towards these machines before sitting down and reading this book. I had come to 
+                    discover that there where other sick and twisted individuals out there who enjoyed working way 
+                    past the call of duty on a project. I especially enjoy chapter 5: "Midnight Programmer" due to how 
+                    cathartic and relatable it is to me and my work, the entire book in general is extremely relatable 
+                    and entertaining to read through! I would give anything to be able to read it for the first time again!
+
+                </p>
+                <img src="../res/picsOfBooks/elementsComputingSystems.jpg" alt="Cover of the book 'The Elements of Computing Systems'">
+                <p>
+                    <span class="bold">'The Elements of Computing Systems' by Noam Nisan and Shimon Schocken</span>: Before reading this book, 
+                    I felt like I never quite got a proper idea of how computers actually work. I had gone through 
+                    my entire time at college and the IOL working with these mystical electrical contraptions and 
+                    yet I felt like I was not really any closer to understanding just how these systems were 
+                    actually processing the code I wrote under the hood. Working through this book finally made 
+                    a lot of computing 'click' for me. I now more clearly understand why instruction sets 
+                    are a thing, how electrical signals in a system can move a character on a screen, and many
+                    other aspects of computers. I believe it is important to know at least something about the hardware you
+                    are trying to control with code to become a better developer. I wished I had read this book before I
+                    started college or else I might have been less hung up on the "why"s of computer science. I 
+                    became so interested in it, that I ended up attempting to create the system outlined in the 
+                    book physically, starting at first with breadboards and wires, but settling with actually 
+                    designing custom PCBs for a more "perminant" setup! This project will appear in the 'Projects' 
+                    section when it becomes more presentable.
+                </p>
+                <img src="../res/picsOfBooks/silmarillion.png" alt="Cover of the book 'The Silmarillion'">
+                <p>
+                    <span class="bold">'The Silmarillion' by J. R. R. Tolkien (edited and published posthumously by Christopher Tolkien)</span>: 
+                    The Silmarillion reads a lot like the Christian Bible, but from the perspective of the Elves of 
+                    Middle-Earth. It deals with many of the Gods and events that took place before 'The Hobbit' and 
+                    'The Lord of the Rings', with these events being mentioned as more of a footnote at the end of 
+                    the Silmarillion rather than being center stage. Long before 'the Ring' and even hobbits, 
+                    there was Melkor (later to be referred to as 'Morgoth', or 'the Black Foe'/'Dark Tyrant') 
+                    and the Silmarils. This is not a book that relates to my profession directly, however I believe
+                    unraveling the history and story of J.R.R. Tolkien's Middle-earth displays skills which
+                    translate to software development pretty well. This being one of my favorite books shows
+                    that I enjoy untangling seemingly insurmountable networks of character associations and
+                    lore. I find the Silmarillion to be much like a software system in that there are many
+                    components in the narrative which work together to produce a relatively coherent narrative
+                    (product). It requires some natural obsessiveness to work through which I feel is shared among
+                    passionate software developers. Also the story generally blows my socks off every time I read it. 
+                </p>
+            </div>
 
         </div>
+
     </body>
 </html>

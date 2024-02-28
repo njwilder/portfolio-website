@@ -10,6 +10,7 @@
     </head>
     <body>
 
+        <!-- Navigation -->
         <nav class="header_nav">
             <ul>
                 <li><a href="#home"    >Home</a></li>
@@ -38,6 +39,7 @@
             </nav>
         </aside>
 
+        <!-- Main content -->
         <!-- Strictly a jump location for the sidebar -->
         <div id="home"></div>
 
@@ -48,7 +50,7 @@
 
         <div class="transition_top" aria-hidden="true"></div>
 
-        <div class="aboutPage" id="about">
+        <div class="aboutSection" id="about">
             <h1>About Me</h1>
             <img id="headshot" src="res/picsOfMe/headshot_glasses.jpg" alt="A headshot of Noah smiling with glasses on.">
             <p>
@@ -83,7 +85,7 @@
         <div class="transition_middle_1"></div>
 
         <!-- Todo: Have these sections split into separate columns if resolution is wide enough -->
-        <div class="skillsPage" id="skills">
+        <div class="skillsSection" id="skills">
             <h1>Skills and Experience</h1>
 
             <div class="skills_panels">
@@ -170,8 +172,8 @@
 
         <div class="transition_middle_2" aria-hidden="true"></div>
 
-        <div class="projectsPage" id="projects">
-            <h1>Personal Projects and Work</h1>
+        <div class="projectsSection" id="projects">
+            <h1>Personal Projects</h1>
             <button id="projectDescriptionButton" value="disabled" onclick="toggleDescriptions()">Toggle Descriptions</button>
 
             <div class="projects_grid">
@@ -179,7 +181,7 @@
 
                 <a class="projectItem" id="proj_hackArchitecture" href="index.html">
                     <h3>HACK System Architecture</h3>
-                    <img id="imgTest" src="res/picsOfProjects/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
+                    <img id="imgTest" src="res/picsOfProjects/hack_system/breadboard_topdown.jpg" alt="A top-down view of breadboards and makeshift circuitry.">
                     <p>
                         My foray into the hardware side of computing. I wanted to learn more about what makes 
                         computers compute more intimately.
@@ -215,7 +217,7 @@
                         to learn more!
                     </p>
                 </a>
-                <a class="projectItem" id="proj_iol" href="projects/iol.html">
+                <!-- <a class="projectItem" id="proj_iol" href="projects/iol.html">
                     <h3>The IOL</h3>
                     <img src="res/picsOfMe/french.jpg" alt="Noah wearing a beret and an ascot celebrating Bastille day while sitting at a desk.">
                     <p>
@@ -226,13 +228,13 @@
                         <span class="desktopText">Click</span> 
                         to learn more!
                     </p>
-                </a>
+                </a> -->
             </div>
         </div>
 
         <div class="transition_middle_1" aria-hidden="true"></div>
 
-        <div class="contactPage" id="contact">
+        <div class="contactSection" id="contact">
             <h1>Contact Me</h1>
             <div class="contact_info">
                 <img src="res/picsOfMe/headshot_crazed.jpg" alt="">
