@@ -666,23 +666,26 @@ a, a:visited, a:hover, a:active {
         --aboutImgWidth: 40%;
         --imgMargin: 25px;
     }
-    .aboutSection #headshot {
-        float: left;
-    }
-    .aboutSection #lincoln_jazzed {
-        float: right;
-    }
+    
     .contactSection img {
         float: right;
     }
     .aboutSection img {
         float: left;
     }
+    .aboutSection #lincoln_jazzed {
+        float: right;
+    }
     .aboutPage img {
         float: left;
+        margin-left: calc(var(--genericSpacing) * 2);
+    }
+    .aboutPage #noah_smart {
+        float: right;
+        margin: var(--imgMargin) calc(var(--genericSpacing) * 2) var(--imgMargin) var(--imgMargin);
     }
     .aboutPage .questionsAndAnswers img {
-        margin: 0 var(--genericSpacing);
+        margin-right: var(--genericSpacing);
     }
 }
 
